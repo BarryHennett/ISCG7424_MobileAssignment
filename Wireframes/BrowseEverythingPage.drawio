@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-03-13T22:23:38.093Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="S0d60kBuBuf0-SUZpcGv" version="24.0.5" type="device">
+  <diagram name="Page-1" id="f1b7ffb7-ca1e-a977-7cf5-a751b3c06c05">
+    <mxGraphModel dx="2607" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-61" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;" vertex="1" parent="1">
+          <mxGeometry width="820" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-62" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="220" width="620" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-63" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Information about activity&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-65" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="400" width="620" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-66" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Information about activity&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="410" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-67" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="585" width="620" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-68" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Information about activity&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="595" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-69" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="770" width="620" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-70" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Information about activity&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="780" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-71" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="960" width="620" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dO-Ke5plsGIxC5qf2pMP-72" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Information about activity&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="970" width="430" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
