@@ -10,17 +10,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-
+        />
     <Button
+        android:id="@+id/cuslgnbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Customer"
@@ -28,6 +26,7 @@
         />
 
     <Button
+        android:id="@+id/cussupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Supplier"
@@ -35,6 +34,7 @@
         />
 
     <Button
+        android:id="@+id/cusadmbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Administration"
