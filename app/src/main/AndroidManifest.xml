@@ -13,6 +13,15 @@
         android:theme="@style/Theme.ISCG7424_MobileApplication"
         tools:targetApi="31">
         <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".SupplierLogin"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLogin"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
