@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" modified="2024-03-18T02:55:47.706Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="rUr2AGdS_Ts6TJtWuaoV" version="24.0.6" type="device">
+  <diagram name="Page-1" id="f1b7ffb7-ca1e-a977-7cf5-a751b3c06c05">
+    <mxGraphModel dx="1444" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QAwNHAfBsccCeliXOUuz-61" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry width="820" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="QAwNHAfBsccCeliXOUuz-62" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;All text is Font&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Montserrat&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="190" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="QAwNHAfBsccCeliXOUuz-63" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&amp;nbsp;Background color&amp;nbsp;#CCE8EE (extremely Light blue)&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="400" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QAwNHAfBsccCeliXOUuz-64" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;white filled with black outline and text&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="960" y="610" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QAwNHAfBsccCeliXOUuz-65" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Goes to home page through logo click&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="150" width="220" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
