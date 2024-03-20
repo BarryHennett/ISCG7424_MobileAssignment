@@ -7,4 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".CustomerLogin">
 
+
+    <Button
+        android:id="@+id/cuslgnbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer"
+        android:onClick="GoCusLogin"
+        />
+
+    <Button
+        android:id="@+id/cussupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supplier"
+        android:onClick="GoSupLogin"
+        />
+
+    <Button
+        android:id="@+id/cusadmbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administration"
+        android:onClick="GoAdminLogin"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

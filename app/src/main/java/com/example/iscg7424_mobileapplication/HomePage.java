@@ -10,28 +10,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SupplierLogin extends AppCompatActivity {
+public class HomePage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_supplier_login);
-
-    }
+        setContentView(R.layout.activity_home_page);
+        }
 
     public void GoCusLogin(View view) {
         Intent intent = new Intent(this, CustomerLogin.class);
         startActivity(intent);
     }
 
-    public void GoSupLogin(View view) {
-        Intent intent = new Intent(this, SupplierLogin.class);
-        startActivity(intent);
-    }
 
-    public void GoAdminLogin(View view) {
-        Intent intent = new Intent(this, AdminLogin.class);
-        startActivity(intent);
-    }
 }
+
