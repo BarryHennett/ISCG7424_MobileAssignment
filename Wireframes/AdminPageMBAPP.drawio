@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" modified="2024-03-20T02:41:39.095Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="LbIr3syoGlCfEk_glApy" version="24.0.7" type="device">
+  <diagram name="Page-1" id="f1b7ffb7-ca1e-a977-7cf5-a751b3c06c05">
+    <mxGraphModel dx="2607" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SlL-C-Yu-niFACReMDrh-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SlL-C-Yu-niFACReMDrh-62" target="SlL-C-Yu-niFACReMDrh-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-62" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry width="820" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-64" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Log Out&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1050" width="760" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SlL-C-Yu-niFACReMDrh-72">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-72" value="IMG BTN&lt;div&gt;Logo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-73" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;All text is Font&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Montserrat&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="290" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-74" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&amp;nbsp;Background color&amp;nbsp;#CCE8EE (extremely Light blue)&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="575" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-75" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Goes to home page through logo click&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="220" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-76" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;white filled with black outline and text&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940" y="394" width="240" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="SlL-C-Yu-niFACReMDrh-80" target="SlL-C-Yu-niFACReMDrh-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-80" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;(What to display selection)&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial; font-size: 24px;&quot;&gt;Users&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 24px; background-color: initial;&quot;&gt;Suppliers&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 24px; background-color: initial;&quot;&gt;Deals&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="780" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SlL-C-Yu-niFACReMDrh-64" target="SlL-C-Yu-niFACReMDrh-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="1070" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint x="790" y="1095" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-77" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Logs out of users account and takes user to home page&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1040" width="221" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="SlL-C-Yu-niFACReMDrh-83" target="SlL-C-Yu-niFACReMDrh-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SlL-C-Yu-niFACReMDrh-83" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Will display info on what the admin selects on the (What to display)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="250" width="760" height="770" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
