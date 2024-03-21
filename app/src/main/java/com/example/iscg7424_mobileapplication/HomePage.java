@@ -25,5 +25,13 @@ public class HomePage extends AppCompatActivity {
     }
 
 
+    public void GoAklCtg(View view) {
+    }
+
+    public void GoWelCtg(View view) {
+    }
+
+    public void GoQueCtg(View view) {
+    }
 }
 

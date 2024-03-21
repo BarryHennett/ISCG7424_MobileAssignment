@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage"
-    android:layout_gravity="center"
-    >
+    android:stretchColumns="1">
 
+    <TableRow
+        android:layout_width="396dp"
+        android:layout_height="81dp">
 
-    <Button
-        android:layout_marginTop="35dp"
-        android:id="@+id/cuslgnbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:onClick="GoCusLogin"
-        />
+        <Button
+            android:id="@+id/cuslgnbtn"
+            android:layout_column="2"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:onClick="GoCusLogin"
+            android:text="Login"
+            tools:ignore="HardcodedText" />
+    </TableRow>
+    <TableRow>
 
+        <Button
+            android:id="@+id/aklcatbtn"
+            android:onClick="GoAklCtg"
+            android:text="Auckland"
+            tools:ignore="HardcodedText" />
 
+        <Button
+            android:id="@+id/welcatbtn"
+            android:layout_gravity="center"
+            android:onClick="GoWelCtg"
+            android:text="Wellington"
+            tools:ignore="HardcodedText" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/quecatbtn"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:onClick="GoQueCtg"
+            android:text="Queenstown"
+            tools:ignore="HardcodedText" />
+
+    </TableRow>
+</TableLayout>

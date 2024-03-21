@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,25 +11,29 @@
 
     <Button
         android:id="@+id/cuslgnbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
-        android:text="Customer"
+        android:layout_gravity="end"
         android:onClick="GoCusLogin"
-        />
+        android:text="Customer"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="66dp" />
 
     <Button
         android:id="@+id/cussupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Supplier"
         android:onClick="GoSupLogin"
-        />
+        android:text="Supplier"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="66dp" />
 
     <Button
         android:id="@+id/cusadmbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Administration"
         android:onClick="GoAdminLogin"
-        />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Administration"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="66dp" />
+</LinearLayout>

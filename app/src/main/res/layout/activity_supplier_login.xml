@@ -10,8 +10,11 @@
 
     <Button
         android:id="@+id/cuslgnbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
         android:text="Customer"
         android:onClick="GoCusLogin"
         />
