@@ -60,10 +60,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_column="1"
+        android:id="@+id/textInputLayout"
         >
 
         <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView"
+            android:id="@+id/CtgDrpDwnHP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
