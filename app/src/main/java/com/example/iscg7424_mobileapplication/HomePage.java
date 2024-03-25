@@ -3,6 +3,7 @@ package com.example.iscg7424_mobileapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +12,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class HomePage extends AppCompatActivity {
 
@@ -22,7 +22,10 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
         setupAutoCompleteTextView();
 
+
     }
+
+
 
     public void GoCusLogin(View view) {
         Intent intent = new Intent(this, CustomerLogin.class);

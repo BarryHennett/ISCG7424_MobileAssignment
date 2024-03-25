@@ -1,124 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage"
-    android:stretchColumns="1">
-
-    <TableRow
-        android:layout_width="396dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
-
-        <Button
-            android:id="@+id/cuslgnbtn"
-            android:layout_column="2"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"
-            android:onClick="GoCusLogin"
-            android:text="Login"
-            tools:ignore="HardcodedText" />
-    </TableRow>
-    <TableRow
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
-
-        <Button
-            android:id="@+id/aklcatbtn"
-            android:onClick="GoAklCtg"
-            android:text="Auckland"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/welcatbtn"
-            android:layout_gravity="center"
-            android:onClick="GoWelCtg"
-            android:text="Wellington"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/quecatbtn"
-            android:layout_gravity="end"
-            android:onClick="GoQueCtg"
-            android:text="Queenstown"
-            tools:ignore="HardcodedText" />
-
-    </TableRow>
+    tools:context=".HomePage">
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_column="1"
-        android:id="@+id/textInputLayout"
-        >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@android:color/transparent"
+        android:stretchColumns="1">
 
-        <AutoCompleteTextView
-            android:id="@+id/CtgDrpDwnHP"
-            android:layout_width="match_parent"
+        <TableRow
+            android:layout_width="396dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/cuslgnbtn"
+                android:layout_column="2"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:onClick="GoCusLogin"
+                android:text="Login"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/aklcatbtn"
+                android:onClick="GoAklCtg"
+                android:text="Auckland"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/welcatbtn"
+                android:layout_gravity="center"
+                android:onClick="GoWelCtg"
+                android:text="Wellington"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/quecatbtn"
+                android:layout_gravity="end"
+                android:onClick="GoQueCtg"
+                android:text="Queenstown"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="none"
-            android:text="Select Category"
-            />
+            android:layout_margin="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/textInputLayout"
+            >
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/CtgDrpDwnHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="Select Category"
+                />
 
-    <Button
-        android:id="@+id/amzdlsbtn"
-        android:layout_gravity="center"
-        android:onClick="goamzdls"
-        android:text="Amazing Deals!"
-        tools:ignore="HardcodedText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/amzdlsbtn"
+            android:layout_gravity="center"
+            android:onClick="goamzdls"
+            android:text="Amazing Deals!"
+            tools:ignore="HardcodedText" />
 
 
 
-    <TableRow
-        android:layout_marginTop="50dp">
-        <ImageButton
-            android:layout_column="0"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"/>
+        <TableRow
+            android:layout_marginTop="50dp">
+            <ImageButton
+                android:layout_column="0"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:contentDescription="image"/>
 
-        <ImageButton
-            android:layout_column="1"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"/>
+            <ImageButton
+                android:layout_column="1"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:contentDescription="image"/>
 
-        <ImageButton
-            android:layout_column="2"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"/>
+            <ImageButton
+                android:layout_column="2"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:contentDescription="image"/>
 
-    </TableRow>
+        </TableRow>
 
-    <TableRow
-        android:layout_marginTop="50dp">
-        <ImageButton
-            android:layout_column="0"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"/>
+        <TableRow
+            android:layout_marginTop="50dp">
+            <ImageButton
+                android:layout_column="0"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:contentDescription="image"/>
 
-        <ImageButton
-            android:layout_column="1"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"/>
+            <ImageButton
+                android:layout_column="1"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:contentDescription="image"/>
 
-        <ImageButton
-            android:layout_column="2"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"/>
-
-    </TableRow>
-
-</TableLayout>
+            <ImageButton
+                android:layout_column="2"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:contentDescription="image"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
