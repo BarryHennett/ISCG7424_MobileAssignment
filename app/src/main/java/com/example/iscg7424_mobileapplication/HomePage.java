@@ -54,6 +54,10 @@ public class HomePage extends AppCompatActivity {
         // Set adapter to AutoCompleteTextView
         autoCompleteTextView.setAdapter(adapter);
     }
+
+    public void goamzdls(View view) {
+
+    }
 }
 
 

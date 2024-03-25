@@ -73,4 +73,52 @@
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/amzdlsbtn"
+        android:layout_gravity="center"
+        android:onClick="goamzdls"
+        android:text="Amazing Deals!"
+        tools:ignore="HardcodedText" />
+
+
+
+    <TableRow
+        android:layout_marginTop="50dp">
+        <ImageButton
+            android:layout_column="0"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="HardcodedText"/>
+
+        <ImageButton
+            android:layout_column="1"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="HardcodedText"/>
+
+        <ImageButton
+            android:layout_column="2"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="HardcodedText"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="50dp">
+        <ImageButton
+            android:layout_column="0"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="HardcodedText"/>
+
+        <ImageButton
+            android:layout_column="1"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="HardcodedText"/>
+
+        <ImageButton
+            android:layout_column="2"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:ignore="HardcodedText"/>
+
+    </TableRow>
+
 </TableLayout>
