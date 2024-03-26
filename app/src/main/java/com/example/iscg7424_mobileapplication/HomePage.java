@@ -59,7 +59,8 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void goamzdls(View view) {
-
+        Intent intent = new Intent(this, BrowseDeals.class);
+        startActivity(intent);
     }
 }
 
