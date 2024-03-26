@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ISCG7424_MobileApplication"
         tools:targetApi="31">
         <activity
+            android:name=".BrowseDeals"
+            android:exported="false" />
+        <activity
             android:name=".AdminLogin"
             android:exported="false" />
         <activity
