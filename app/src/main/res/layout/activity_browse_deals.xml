@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/homepage"
+    android:id="@+id/BrowseDeals"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    tools:context=".BrowseDeals">
 
 
     <TableLayout
@@ -14,7 +14,6 @@
         android:layout_height="match_parent"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
-        android:background="@android:color/transparent"
         android:stretchColumns="1">
 
         <TableRow>
@@ -31,7 +30,6 @@
         </TableRow>
 
             <LinearLayout
-                android:id="@+id/backgroundContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -64,6 +62,16 @@
                     android:text="Button 3"
                     android:layout_marginStart="5dp"/>
             </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r_view">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 
     </TableLayout>
 </RelativeLayout>
