@@ -1,6 +1,8 @@
 package com.example.iscg7424_mobileapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,5 +28,10 @@ public class BrowseDeals extends AppCompatActivity {
         RVAdapter adapter = new RVAdapter(this, data, images);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
+    }
+
+    public void gohomepge(View view) {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
     }
 }

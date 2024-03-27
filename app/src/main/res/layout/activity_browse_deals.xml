@@ -18,10 +18,12 @@
 
         <TableRow>
             <ImageButton
+                android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
                 android:src="@drawable/ic_launcher_foreground"
                 tools:ignore="HardcodedText"
-                android:contentDescription="image"/>
+                android:contentDescription="image"
+                android:onClick="gohomepge"/>
 
             <Button
                 android:layout_column="2"
