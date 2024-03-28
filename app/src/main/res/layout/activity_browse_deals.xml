@@ -69,11 +69,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/r_view">
-
-
     </androidx.recyclerview.widget.RecyclerView>
-
-
-
     </TableLayout>
 </RelativeLayout>
