@@ -65,6 +65,10 @@
                     android:layout_marginStart="5dp"/>
             </LinearLayout>
 
+        <SearchView
+            android:text="Search Activity"
+            tools:ignore="HardcodedText" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

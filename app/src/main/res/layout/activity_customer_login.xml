@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,31 +8,49 @@
     android:layout_height="match_parent"
     tools:context=".CustomerLogin">
 
-
-    <Button
-        android:id="@+id/cuslgnbtn"
-        android:layout_width="115dp"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="35dp"
-        android:text="Customer"
-        android:onClick="GoCusLogin"
-        />
+        android:background="@android:color/transparent"
+        android:stretchColumns="1">
+        <TableRow>
 
-    <Button
-        android:id="@+id/cussupbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Supplier"
-        android:onClick="GoSupLogin"
-        />
+            <ImageButton
+                android:id="@+id/imgbtnbrsdls"
+                android:layout_column="0"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:onClick="gohomepge"/>
+        </TableRow>
 
-    <Button
-        android:id="@+id/cusadmbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Administration"
-        android:onClick="GoAdminLogin"
-        />
-</LinearLayout>
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/cuslgnbtn"
+                android:text="Customer"
+                android:onClick="GoCusLogin"
+                tools:ignore="HardcodedText"
+
+                />
+
+            <Button
+                android:id="@+id/cussupbtn"
+                android:text="Supplier"
+                android:onClick="GoSupLogin"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/cusadmbtn"
+                android:text="Administration"
+                android:onClick="GoAdminLogin"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="end"
+
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

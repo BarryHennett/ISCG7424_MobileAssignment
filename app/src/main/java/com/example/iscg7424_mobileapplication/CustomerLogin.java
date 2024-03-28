@@ -17,7 +17,11 @@ public class CustomerLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_customer_login);
+    }
 
+    public void gohomepge(View view) {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
     }
 
     public void GoCusLogin(View view) {
