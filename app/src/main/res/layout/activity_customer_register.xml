@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customerlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerLogin">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:stretchColumns="1">
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/imgbtnbrsdls"
+                android:layout_column="0"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:onClick="gohomepge"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/cuslgnbtn"
+                android:text="Customer"
+                android:onClick="GoCusLogin"
+                tools:ignore="HardcodedText"
+
+                />
+
+            <Button
+                android:id="@+id/cussupbtn"
+                android:text="Supplier"
+                android:onClick="GoSupLogin"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/cusadmbtn"
+                android:text="Administration"
+                android:onClick="GoAdminLogin"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="end"
+                />
+        </TableRow>
+        <TableRow
+            android:paddingTop="30dp">
+            <EditText
+                android:text="First Name"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_column="2"
+                android:text="Last Name"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <EditText
+            android:paddingTop="60dp"
+            android:text="Email Input"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:paddingTop="60dp"
+            android:text="Password Input"
+            tools:ignore="HardcodedText" />
+
+
+
+            <Button
+                android:paddingTop="10dp"
+                android:text="Register"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+
+
+
+
+    </TableLayout>
+    <Button
+        android:id="@+id/registerInsteadBtn"
+        android:text="Login Instead"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"/>
+
+</RelativeLayout>
