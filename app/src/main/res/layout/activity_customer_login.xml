@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/customerlogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CustomerLogin">
@@ -49,8 +49,53 @@
                 android:onClick="GoAdminLogin"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="end"
-
                 />
         </TableRow>
-    </TableLayout>
+        <TableRow
+            android:paddingTop="30dp">
+            <EditText
+                android:text="Search Activity"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:layout_column="2"
+                android:text="Search Activity"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <EditText
+            android:paddingTop="60dp"
+            android:text="Email Input"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:paddingTop="60dp"
+            android:text="Password Input"
+            tools:ignore="HardcodedText" />
+
+
+        <TableRow
+            android:paddingTop="60dp">
+            <Button
+                android:text="Login"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:layout_column="2"
+                android:text="Forgot Password"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                />
+        </TableRow>
+
+        </TableLayout>
+    <Button
+        android:id="@+id/registerInsteadBtn"
+        android:text="Register Instead"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"/>
+
 </RelativeLayout>
