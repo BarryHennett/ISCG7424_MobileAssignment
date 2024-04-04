@@ -22,6 +22,13 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
         setupAutoCompleteTextView();
 
+        AutoCompleteTextView categoryAutoCompleteTextView = findViewById(R.id.CtgDrpDwnHP);
+
+        String[] categories = {"Category 1", "Category 2", "Category 3", "Category 4"};
+
+        ArrayAdapter<String> categoryAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, categories);
+
+        categoryAutoCompleteTextView.setAdapter(categoryAdapter);
 
     }
 

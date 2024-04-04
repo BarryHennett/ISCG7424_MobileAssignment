@@ -42,10 +42,11 @@
             android:exported="false" />
 
         <activity
-            android:name=".HomePage"
-            android:exported="false" />
-        <activity
             android:name=".NewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

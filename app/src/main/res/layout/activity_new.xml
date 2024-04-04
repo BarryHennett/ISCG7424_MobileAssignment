@@ -14,18 +14,28 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:stretchColumns="1"
+        android:layout_marginStart="10dp"
+
         >
-    <TableRow>
+        <TableRow>
 
-        <ImageButton
-            android:id="@+id/imgbtnbrsdls"
-            android:layout_column="0"
-            android:src="@drawable/ic_launcher_foreground"
-            tools:ignore="HardcodedText"
-            android:onClick="gohomepge"
-            android:paddingBottom="20dp"/>
-    </TableRow>
+            <Button
+                android:layout_width="100dp"
+                android:id="@+id/imgbtnbrsdls"
+                android:layout_column="0"
+                android:text="Home"
+                tools:ignore="HardcodedText"
+                android:onClick="gohomepge"
+                />
 
+            <Button
+                android:id="@+id/supprf"
+                android:layout_column="2"
+                android:layout_marginEnd="10dp"
+                android:onClick="GoCusLogin"
+                android:text="Profile"
+                tools:ignore="HardcodedText" />
+        </TableRow>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
