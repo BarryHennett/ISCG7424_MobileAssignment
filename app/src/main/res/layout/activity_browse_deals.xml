@@ -26,8 +26,10 @@
                 android:onClick="gohomepge"/>
 
             <Button
+                android:id="@+id/goprofile"
                 android:layout_column="2"
                 android:text="Profile"
+                android:onClick="goprf"
                 />
         </TableRow>
 
@@ -66,13 +68,17 @@
             </LinearLayout>
 
         <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Search Activity"
             tools:ignore="HardcodedText" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/r_view">
+        android:id="@+id/r_view"
+        android:onClick="godldtls">
     </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>
 </RelativeLayout>

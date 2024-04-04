@@ -30,8 +30,18 @@ public class BrowseDeals extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
+    public void goprf(View view) {
+        Intent intent = new Intent(this, UserProfile.class);
+        startActivity(intent);
+    }
+
     public void gohomepge(View view) {
         Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
+    }
+
+    public void godldtls(View view) {
+        Intent intent = new Intent(this, DealDetails.class);
         startActivity(intent);
     }
 }
