@@ -16,6 +16,10 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
         this.data = data;
         this.images = images;
     }
+    public RVAdapter(UserProfile mainActivity, String[] data,int[] images){
+        this.data = data;
+        this.images = images;
+    }
     @NonNull
     @Override
     public RVHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
