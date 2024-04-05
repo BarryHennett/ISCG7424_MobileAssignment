@@ -53,10 +53,24 @@
                 />
         </TableRow>
 
+
+        <TableRow>
+            <EditText
+                android:paddingTop="60dp"
+                android:text="First Name Input"
+                tools:ignore="HardcodedText"
+                android:layout_column="0"/>
+            <EditText
+                android:paddingTop="60dp"
+                android:text="Last Name Input"
+                tools:ignore="HardcodedText"
+                android:layout_column="2"/>
+        </TableRow>
         <EditText
             android:paddingTop="60dp"
             android:text="Company Name Input"
             tools:ignore="HardcodedText" />
+
 
 
         <EditText
@@ -70,29 +84,21 @@
             tools:ignore="HardcodedText" />
 
 
-        <TableRow
-            android:paddingTop="60dp">
-            <Button
-                android:text="Login"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"/>
+        <Button
+            android:paddingTop="10dp"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
 
-            <Button
-                android:layout_column="2"
-                android:text="Forgot Password"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                />
-        </TableRow>
 
+        <Button
+            android:id="@+id/LoginInsteadBtn"
+            android:text="Login Instead"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            />
     </TableLayout>
-    <Button
-        android:id="@+id/registerInsteadBtn"
-        android:text="Register Instead"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"/>
+
 
 </RelativeLayout>

@@ -55,7 +55,8 @@
             android:paddingTop="30dp">
             <EditText
                 android:text="First Name"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:id="@+id/FNameCt"/>
             <EditText
                 android:layout_column="2"
                 android:text="Last Name"
@@ -72,25 +73,18 @@
             android:text="Password Input"
             tools:ignore="HardcodedText" />
 
-
-
             <Button
                 android:paddingTop="10dp"
                 android:text="Register"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"/>
 
-
-
-
+        <Button
+            android:id="@+id/LoginInsteadBtn"
+            android:text="Login Instead"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            />
     </TableLayout>
-    <Button
-        android:id="@+id/registerInsteadBtn"
-        android:text="Login Instead"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"/>
-
 </RelativeLayout>
