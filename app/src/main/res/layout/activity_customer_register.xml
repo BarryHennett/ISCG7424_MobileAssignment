@@ -60,6 +60,7 @@
             <EditText
                 android:layout_column="2"
                 android:text="Last Name"
+                android:id="@+id/LNameCt"
                 tools:ignore="HardcodedText" />
         </TableRow>
 

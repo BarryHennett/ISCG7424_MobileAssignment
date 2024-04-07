@@ -9,6 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.List;
 public class CustomerRegister extends AppCompatActivity {
 
     @Override
@@ -16,6 +17,8 @@ public class CustomerRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_customer_register);
+
+
     }
 
     @Override
