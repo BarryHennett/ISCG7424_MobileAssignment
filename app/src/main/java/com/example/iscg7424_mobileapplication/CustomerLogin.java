@@ -38,4 +38,10 @@ public class CustomerLogin extends AppCompatActivity {
         Intent intent = new Intent(this, AdminLogin.class);
         startActivity(intent);
     }
+
+
+    public void gocrg(View view) {
+        Intent intent = new Intent(this, CustomerRegister.class);
+        startActivity(intent);
+    }
 }

@@ -1,16 +1,15 @@
 package com.example.iscg7424_mobileapplication;
-
 public class Customer {
     private int id;
-    private String fname;
-    private String lname;
+    private String FNameCt;
+    private String LNameCt;
     private String email;
     private String pword;
 
-    public Customer(int id, String FNameCt, String LNameCt, String email, String pword) {
+    public Customer() {
         this.id = id;
         this.FNameCt = FNameCt;
-        this.LNameCT = LNameCT;
+        this.LNameCt = LNameCt;
         this.email = email;
         this.pword = pword;
     }
@@ -23,20 +22,20 @@ public class Customer {
         this.id = id;
     }
 
-    public String getFname() {
-        return fname;
+    public String getFNameCt() {
+        return FNameCt;
     }
 
-    public void setFname(String fname) {
-        this.fname = fname;
+    public void setFNameCt(String FNameCt) {
+        this.FNameCt = FNameCt;
     }
 
-    public String getLname() {
-        return lname;
+    public String getLNameCt() {
+        return LNameCt;
     }
 
-    public void setLname(String lname) {
-        this.lname = lname;
+    public void setLNameCt(String LNameCt) {
+        this.LNameCt = LNameCt;
     }
 
     public String getEmail() {

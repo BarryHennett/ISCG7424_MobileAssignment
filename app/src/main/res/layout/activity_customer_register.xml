@@ -67,18 +67,21 @@
         <EditText
             android:paddingTop="60dp"
             android:text="Email Input"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:id="@+id/EmailInputCt"/>
 
         <EditText
             android:paddingTop="60dp"
             android:text="Password Input"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:id="@+id/PasswordInputCt"/>
 
             <Button
                 android:paddingTop="10dp"
                 android:text="Register"
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"/>
+                android:layout_height="60dp"
+                android:id="@+id/RegisterButtonCt"/>
 
         <Button
             android:id="@+id/LoginInsteadBtn"

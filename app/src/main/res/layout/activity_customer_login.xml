@@ -92,6 +92,7 @@
     <Button
         android:id="@+id/registerInsteadBtn"
         android:text="Register Instead"
+        android:onClick="gocrg"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
