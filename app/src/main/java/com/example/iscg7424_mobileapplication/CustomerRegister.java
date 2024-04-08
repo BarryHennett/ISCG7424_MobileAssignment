@@ -17,6 +17,8 @@ import android.app.Dialog;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.MotionEvent;
+
 
 
 public class CustomerRegister extends AppCompatActivity {
@@ -37,6 +39,26 @@ public class CustomerRegister extends AppCompatActivity {
         emailEditText = findViewById(R.id.EmailInputCt);
         passwordEditText = findViewById(R.id.PasswordInputCt);
         registerButton = findViewById(R.id.RegisterButtonCt);
+
+
+        firstNameEditText.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                firstNameEditText.setText("");
+                firstNameEditText.setOnTouchListener(null);
+                return false;
+            }
+        });
+
+        lastNameEditText.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                lastNameEditText.setText("");
+                lastNameEditText.setOnTouchListener(null);
+                return false;
+            }
+        });
+
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +84,8 @@ public class CustomerRegister extends AppCompatActivity {
 
 
     private void displayCustomerInfoToast(String firstName, String lastName, String email, String password) {
-        String customerInfo = "First Name: " + firstName + "\n" +
+        String customerInfo =
+                "First Name: " + firstName + "\n" +
                 "Last Name: " + lastName + "\n" +
                 "Email: " + email + "\n" +
                 "Password: " + password;

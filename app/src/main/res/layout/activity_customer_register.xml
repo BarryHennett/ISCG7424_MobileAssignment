@@ -54,14 +54,22 @@
         <TableRow
             android:paddingTop="30dp">
             <EditText
+                android:id="@+id/FNameCt"
                 android:text="First Name"
-                tools:ignore="HardcodedText"
-                android:id="@+id/FNameCt"/>
-            <EditText
-                android:layout_column="2"
-                android:text="Last Name"
-                android:id="@+id/LNameCt"
+                android:inputType="text"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/LNameCt"
+                android:text="Last Name"
+                android:inputType="text"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                tools:ignore="HardcodedText"
+                android:layout_column="2"/>
+
         </TableRow>
 
         <EditText
