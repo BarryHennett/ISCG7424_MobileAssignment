@@ -51,16 +51,7 @@
                 android:layout_gravity="end"
                 />
         </TableRow>
-        <TableRow
-            android:paddingTop="30dp">
-            <EditText
-                android:text="Search Activity"
-                tools:ignore="HardcodedText" />
-            <EditText
-                android:layout_column="2"
-                android:text="Search Activity"
-                tools:ignore="HardcodedText" />
-        </TableRow>
+
 
         <EditText
             android:paddingTop="60dp"

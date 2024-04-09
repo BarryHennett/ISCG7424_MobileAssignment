@@ -72,17 +72,25 @@
 
         </TableRow>
 
-        <EditText
-            android:paddingTop="60dp"
-            android:text="Email Input"
-            tools:ignore="HardcodedText"
-            android:id="@+id/EmailInputCt"/>
 
         <EditText
             android:paddingTop="60dp"
+            android:id="@+id/EmailInputCt"
+            android:text="Email Input"
+            android:inputType="text"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:paddingTop="60dp"
+            android:id="@+id/PasswordInputCt"
             android:text="Password Input"
-            tools:ignore="HardcodedText"
-            android:id="@+id/PasswordInputCt"/>
+            android:inputType="text"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="HardcodedText" />
 
             <Button
                 android:paddingTop="10dp"
