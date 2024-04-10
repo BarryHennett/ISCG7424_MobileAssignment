@@ -28,15 +28,15 @@
             android:layout_marginBottom="20dp">
 
             <Button
-                android:id="@+id/cuslgnbtn"
+                android:id="@+id/gocusregbtn"
                 android:text="Customer"
-                android:onClick="GoCusLogin"
+                android:onClick="GoCusReg"
                 tools:ignore="HardcodedText"
 
                 />
 
             <Button
-                android:id="@+id/cussupbtn"
+                android:id="@+id/gosupregbtn"
                 android:text="Supplier"
                 android:onClick="GoSupReg"
                 tools:ignore="HardcodedText"
@@ -44,30 +44,25 @@
                 />
 
             <Button
-                android:id="@+id/cusadmbtn"
+                android:id="@+id/goadminregbtn"
                 android:text="Administration"
                 android:onClick="GoAdminReg"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="end"
+
                 />
         </TableRow>
         <TableRow
             android:paddingTop="30dp">
             <EditText
                 android:id="@+id/FNameCt"
-                android:text="First Name"
-                android:inputType="text"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                tools:ignore="HardcodedText" />
+                android:hint="First Name"
+                 />
 
             <EditText
                 android:id="@+id/LNameCt"
-                android:text="Last Name"
+                android:hint="Last Name"
                 android:inputType="text"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                tools:ignore="HardcodedText"
                 android:layout_column="2"/>
 
         </TableRow>
@@ -76,21 +71,15 @@
         <EditText
             android:paddingTop="60dp"
             android:id="@+id/EmailInputCt"
-            android:text="Email Input"
-            android:inputType="text"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            tools:ignore="HardcodedText" />
+            android:hint="Email Input"
+ />
 
 
         <EditText
             android:paddingTop="60dp"
             android:id="@+id/PasswordInputCt"
-            android:text="Password Input"
-            android:inputType="text"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            tools:ignore="HardcodedText" />
+            android:hint="Password Input"
+ />
 
             <Button
                 android:paddingTop="10dp"

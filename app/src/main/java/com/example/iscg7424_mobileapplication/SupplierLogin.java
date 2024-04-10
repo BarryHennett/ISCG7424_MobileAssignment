@@ -24,14 +24,13 @@ public class SupplierLogin extends AppCompatActivity {
         Intent intent = new Intent(this, CustomerLogin.class);
         startActivity(intent);
     }
-
-    public void GoSupLogin(View view) {
+    public void GoSupLoginbtn(View view) {
         Intent intent = new Intent(this, SupplierLogin.class);
         startActivity(intent);
     }
-
     public void GoAdminLogin(View view) {
         Intent intent = new Intent(this, AdminLogin.class);
         startActivity(intent);
     }
+
 }

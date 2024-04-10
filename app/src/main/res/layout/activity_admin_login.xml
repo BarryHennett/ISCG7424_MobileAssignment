@@ -38,36 +38,38 @@
             <Button
                 android:id="@+id/cussupbtn"
                 android:text="Supplier"
-                android:onClick="GoSupLogin"
+                android:onClick="GoSupLoginbtn"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="center"
                 />
 
             <Button
-                android:id="@+id/cusadmbtn"
+                android:id="@+id/cusadmlgnbtn"
                 android:text="Administration"
                 android:onClick="GoAdminLogin"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="end"
-
                 />
         </TableRow>
 
         <EditText
             android:paddingTop="60dp"
-            android:text="Admin Key Input"
-            tools:ignore="HardcodedText" />
+            android:hint="Admin Key Input"
+            tools:ignore="HardcodedText"
+            android:id="@+id/admkeylgn"/>
 
 
         <EditText
             android:paddingTop="60dp"
-            android:text="Email Input"
-            tools:ignore="HardcodedText" />
+            android:hint="Email Input"
+            tools:ignore="HardcodedText"
+            android:id="@+id/adminemaillgn"/>
 
         <EditText
             android:paddingTop="60dp"
-            android:text="Password Input"
-            tools:ignore="HardcodedText" />
+            android:hint="Password Input"
+            tools:ignore="HardcodedText"
+            android:id="@+id/admpwordlgn"/>
 
 
         <TableRow
@@ -75,24 +77,19 @@
             <Button
                 android:text="Login"
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"/>
+                android:layout_height="60dp"
+                android:id="@+id/adminlogbtn"/>
 
             <Button
-                android:layout_column="2"
-                android:text="Forgot Password"
+                android:id="@+id/admregisterInsteadBtn"
+                android:text="Register Instead"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
+                android:layout_column="2"
                 />
         </TableRow>
 
     </TableLayout>
-    <Button
-        android:id="@+id/registerInsteadBtn"
-        android:text="Register Instead"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"/>
+
 
 </RelativeLayout>

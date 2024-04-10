@@ -38,13 +38,13 @@
             <Button
                 android:id="@+id/cussupbtn"
                 android:text="Supplier"
-                android:onClick="GoSupLogin"
+                android:onClick="GoSupLoginbtn"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="center"
                 />
 
             <Button
-                android:id="@+id/cusadmbtn"
+                android:id="@+id/cusadmlgnbtn"
                 android:text="Administration"
                 android:onClick="GoAdminLogin"
                 tools:ignore="HardcodedText"
@@ -56,13 +56,13 @@
         <EditText
             android:paddingTop="60dp"
             android:id="@+id/emailEditText"
-            android:text="Email Input"
+            android:hint="Email Input"
             tools:ignore="HardcodedText" />
 
         <EditText
             android:paddingTop="60dp"
             android:id="@+id/passwordEditText"
-            android:text="Password Input"
+            android:hint="Password Input"
             tools:ignore="HardcodedText" />
 
 

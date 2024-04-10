@@ -28,25 +28,25 @@
             android:layout_marginBottom="20dp">
 
             <Button
-                android:id="@+id/cuslgnbtn"
+                android:id="@+id/gocusregbtn"
                 android:text="Customer"
-                android:onClick="GoCusLogin"
+                android:onClick="GoCusReg"
                 tools:ignore="HardcodedText"
 
                 />
 
             <Button
-                android:id="@+id/cussupbtn"
+                android:id="@+id/gosupregbtn"
                 android:text="Supplier"
-                android:onClick="GoSupLogin"
+                android:onClick="GoSupReg"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="center"
                 />
 
             <Button
-                android:id="@+id/cusadmbtn"
+                android:id="@+id/goadminregbtn"
                 android:text="Administration"
-                android:onClick="GoAdminLogin"
+                android:onClick="GoAdminReg"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="end"
 
@@ -56,38 +56,43 @@
         <TableRow>
             <EditText
                 android:paddingTop="60dp"
-                android:text="First Name Input"
+                android:hint="First Name Input"
                 tools:ignore="HardcodedText"
-                android:layout_column="0"/>
+                android:layout_column="0"
+                android:id="@+id/adminfnameinput"/>
             <EditText
                 android:paddingTop="60dp"
-                android:text="Last Name Input"
+                android:hint="Last Name Input"
                 tools:ignore="HardcodedText"
-                android:layout_column="2"/>
+                android:layout_column="2"
+                android:id="@+id/adminlnameinput"/>
         </TableRow>
         <EditText
             android:paddingTop="60dp"
-            android:text="Admin Key Input"
-            tools:ignore="HardcodedText" />
+            android:hint="Admin Key Input"
+            tools:ignore="HardcodedText"
+            android:id="@+id/adminkeyinput"/>
 
 
         <EditText
             android:paddingTop="60dp"
-            android:text="Email Input"
-            tools:ignore="HardcodedText" />
+            android:hint="Email Input"
+            tools:ignore="HardcodedText"
+            android:id="@+id/adminemailinput"/>
 
         <EditText
             android:paddingTop="60dp"
-            android:text="Password Input"
-            tools:ignore="HardcodedText" />
+            android:hint="Password Input"
+            tools:ignore="HardcodedText"
+            android:id="@+id/adminpwordinput"/>
 
 
         <Button
             android:paddingTop="10dp"
             android:text="Register"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"/>
-
+            android:layout_height="60dp"
+            android:id="@+id/registeradminbtn"/>
 
 
         <Button
@@ -97,5 +102,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
            />
+
+
     </TableLayout>
 </RelativeLayout>
