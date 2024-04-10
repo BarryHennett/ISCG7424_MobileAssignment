@@ -3,17 +3,23 @@ package com.example.iscg7424_mobileapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.widget.TextViewCompat;
+import androidx.core.widget.TextViewCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Toast;
 
 public class HomePage extends AppCompatActivity {
+
+    private EditText editTextEmail, editTextPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,24 +27,12 @@ public class HomePage extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home_page);
         setupAutoCompleteTextView();
-
-        AutoCompleteTextView categoryAutoCompleteTextView = findViewById(R.id.CtgDrpDwnHP);
-
-        String[] categories = {"Category 1", "Category 2", "Category 3", "Category 4"};
-
-        ArrayAdapter<String> categoryAdapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, categories);
-
-        categoryAutoCompleteTextView.setAdapter(categoryAdapter);
-
     }
-
-
 
     public void GoCusLogin(View view) {
         Intent intent = new Intent(this, CustomerLogin.class);
         startActivity(intent);
     }
-
 
     public void GoAklCtg(View view) {
     }
@@ -48,7 +42,6 @@ public class HomePage extends AppCompatActivity {
 
     public void GoQueCtg(View view) {
     }
-
 
     public void setupAutoCompleteTextView() {
         // Get reference to AutoCompleteTextView
@@ -70,6 +63,3 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
     }
 }
-
-
-

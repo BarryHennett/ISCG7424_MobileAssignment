@@ -71,19 +71,20 @@ public class CustomerLogin extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void GoSupLogin(View view) {
-        Intent intent = new Intent(this, SupplierLogin.class);
-        startActivity(intent);
-    }
-
-    public void GoAdminLogin(View view) {
-        Intent intent = new Intent(this, AdminLogin.class);
-        startActivity(intent);
-    }
 
 
     public void gocrg(View view) {
         Intent intent = new Intent(this, CustomerRegister.class);
+        startActivity(intent);
+    }
+
+    public void GoSupReg(View view) {
+        Intent intent = new Intent(this, SupplierRegister.class);
+        startActivity(intent);
+    }
+
+    public void GoAdminReg(View view) {
+        Intent intent = new Intent(this, AdminRegister.class);
         startActivity(intent);
     }
 }

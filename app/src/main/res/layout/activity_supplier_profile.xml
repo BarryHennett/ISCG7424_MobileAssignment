@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupplierProfile">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:stretchColumns="1"
+        >
+
+            <ImageButton
+                android:id="@+id/imgbtnbrsdls"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:ignore="HardcodedText"
+                android:onClick="gohomepge"
+                android:paddingBottom="20dp"/>
+
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:textSize="30dp"
+                android:text="First Name:"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:textSize="30dp"
+                android:text="Last Name:"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:textSize="30dp"
+                android:text="Company Name:"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:textSize="30dp"
+                android:text="Email:"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/addnewactivity"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="GoNewActivity"
+            android:text="Add New Activity"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_view">
+        </androidx.recyclerview.widget.RecyclerView>
+    </TableLayout>
+</RelativeLayout>

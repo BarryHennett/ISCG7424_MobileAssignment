@@ -38,7 +38,7 @@
             <Button
                 android:id="@+id/cussupbtn"
                 android:text="Supplier"
-                android:onClick="GoSupLogin"
+                android:onClick="GoSupReg"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="center"
                 />
@@ -46,7 +46,7 @@
             <Button
                 android:id="@+id/cusadmbtn"
                 android:text="Administration"
-                android:onClick="GoAdminLogin"
+                android:onClick="GoAdminReg"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="end"
                 />

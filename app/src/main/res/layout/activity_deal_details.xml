@@ -36,8 +36,16 @@
                 android:src="@drawable/ic_launcher_foreground"
                 />
 
+
         <TextView
-            android:text=""/>
+            android:id="@+id/activityNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:text="Activity Name"
+            android:layout_centerHorizontal="true"/>
 
     </TableLayout>
 </RelativeLayout>
