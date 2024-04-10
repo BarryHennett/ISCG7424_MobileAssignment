@@ -55,13 +55,13 @@
 
         <EditText
             android:paddingTop="60dp"
-            android:id="@+id/emailEditText"
+            android:id="@+id/customeremaillgn"
             android:hint="Email Input"
             tools:ignore="HardcodedText" />
 
         <EditText
             android:paddingTop="60dp"
-            android:id="@+id/passwordEditText"
+            android:id="@+id/customerpwordlgn"
             android:hint="Password Input"
             tools:ignore="HardcodedText" />
 
@@ -70,7 +70,7 @@
             android:paddingTop="60dp">
             <Button
                 android:text="Login"
-                android:id="@+id/loginbtn"
+                android:id="@+id/customerloginbtn"
                 android:onClick="login"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"/>
@@ -85,7 +85,7 @@
 
         </TableLayout>
     <Button
-        android:id="@+id/registerInsteadBtn"
+        android:id="@+id/cusregisterInsteadBtn"
         android:text="Register Instead"
         android:onClick="gocrg"
         android:layout_width="wrap_content"

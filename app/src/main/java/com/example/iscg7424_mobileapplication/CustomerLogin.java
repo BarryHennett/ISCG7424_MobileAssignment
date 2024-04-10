@@ -4,68 +4,65 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CustomerLogin extends AppCompatActivity {
-
-    private EditText emailEditText;
-    private EditText passwordEditText;
+    EditText email, password;
+    Button login, register;
+    CusDBHelper DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_login);
 
-        emailEditText = findViewById(R.id.emailEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
+        email = (EditText) findViewById(R.id.customeremaillgn);
+        password = (EditText) findViewById(R.id.customerpwordlgn);
+        login = (Button) findViewById(R.id.customerloginbtn);
+        DB = new CusDBHelper(this);
 
-        emailEditText.setOnTouchListener(new View.OnTouchListener() {
+
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                emailEditText.setText("");
-                emailEditText.setOnTouchListener(null);
-                return false;
+            public void onClick(View v) {
+                String user = email.getText().toString();
+                String pass = password.getText().toString();
+
+                if(user.equals("")||pass.equals(""))
+                    Toast.makeText(CustomerLogin.this, "Please Enter all the fields", Toast.LENGTH_SHORT).show();
+                else {
+                    Boolean checkuserpass = DB.checkemailpass(user,pass);{
+                        if (checkuserpass==true){
+                            Toast.makeText(CustomerLogin.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), HomePage.class);
+                            startActivity(intent);
+                        }else {
+                            Toast.makeText(CustomerLogin.this, "Invalid Login", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
             }
         });
-
-        passwordEditText.setOnTouchListener(new View.OnTouchListener() {
+        register = (Button) findViewById(R.id.cusregisterInsteadBtn);
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                passwordEditText.setText("");
-                passwordEditText.setOnTouchListener(null);
-                return false;
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), CustomerRegister.class);
+                startActivity(intent);
             }
         });
     }
 
-    public void login(View view) {
-        // Get input values
-        String email = emailEditText.getText().toString();
-        String password = passwordEditText.getText().toString();
-
-        // Retrieve customer data from SharedPreferences
-        Customer savedCustomer = CustomerManager.getCustomer(getApplicationContext());
-
-        // Check if customer data exists and matches the input
-        if (savedCustomer != null && savedCustomer.getEmail().equals(email) && savedCustomer.getPword().equals(password)) {
-            // Login successful, navigate to homepage
-            Intent intent = new Intent(this, HomePage.class);
-            startActivity(intent);
-            finish(); // Finish current activity to prevent going back to login page
-        } else {
-            // Login failed, display error message
-            Toast.makeText(this, "Invalid email or password. Please try again.", Toast.LENGTH_SHORT).show();
-        }
-    }
 
 
     public void gohomepge(View view) {
         Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
-
 
     public void gocrg(View view) {
         Intent intent = new Intent(this, CustomerRegister.class);
@@ -84,6 +81,4 @@ public class CustomerLogin extends AppCompatActivity {
         Intent intent = new Intent(this, AdminLogin.class);
         startActivity(intent);
     }
-
-
 }
