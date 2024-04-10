@@ -17,9 +17,6 @@
             android:name=".SupplierActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminActivity"
-            android:exported="false" />
-        <activity
             android:name=".UserActivity"
             android:exported="false" />
         <activity
@@ -31,8 +28,9 @@
         <activity
             android:name=".SupplierRegister"
             android:exported="false" />
+
         <activity
-            android:name=".CustomerRegister"
+            android:name=".AdminRegister"
             android:exported="false" />
         <activity
             android:name=".DealDetails"
@@ -56,7 +54,7 @@
             android:name=".HomePage"
             android:exported="false" />
         <activity
-            android:name=".AdminRegister"
+            android:name=".CustomerRegister"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

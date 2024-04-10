@@ -17,7 +17,7 @@ public class AdminLogin extends AppCompatActivity {
 
     EditText adminkey, email, password;
     Button login, register;
-    DBHelper DB;
+    AdmDBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class AdminLogin extends AppCompatActivity {
         email = (EditText) findViewById(R.id.adminemaillgn);
         password = (EditText) findViewById(R.id.admpwordlgn);
         login = (Button) findViewById(R.id.adminlogbtn);
-        DB = new DBHelper(this);
+        DB = new AdmDBHelper(this);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +53,14 @@ public class AdminLogin extends AppCompatActivity {
             }
         });
         register = (Button) findViewById(R.id.admregisterInsteadBtn);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(getApplicationContext(), AdminRegister.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void GoCusLogin(View view) {

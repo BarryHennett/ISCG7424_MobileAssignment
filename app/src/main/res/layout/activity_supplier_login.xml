@@ -55,18 +55,21 @@
         <EditText
             android:paddingTop="60dp"
             android:hint="Company Name Input"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:id="@+id/supcompanyname"/>
 
 
         <EditText
             android:paddingTop="60dp"
             android:hint="Email Input"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:id="@+id/supplieremaillgn" />
 
         <EditText
             android:paddingTop="60dp"
             android:hint="Password Input"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:id="@+id/suppwordlgn"/>
 
 
         <TableRow
@@ -74,24 +77,19 @@
             <Button
                 android:text="Login"
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"/>
+                android:layout_height="60dp"
+                android:id="@+id/supplierlogbtn"/>
 
             <Button
-                android:layout_column="2"
-                android:text="Forgot Password"
+                android:id="@+id/supregisterInsteadBtn"
+                android:text="Register Instead"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                />
+                android:layout_column="2"
+                android:layout_marginBottom="120dp"/>
         </TableRow>
 
     </TableLayout>
-    <Button
-        android:id="@+id/registerInsteadBtn"
-        android:text="Register Instead"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"/>
+
 
 </RelativeLayout>

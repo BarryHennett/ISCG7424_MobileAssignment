@@ -17,7 +17,7 @@ public class AdminRegister extends AppCompatActivity {
 
     EditText fname, lname, adminkey, email, password;
     Button register, login;
-    DBHelper DB;
+    AdmDBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class AdminRegister extends AppCompatActivity {
         register = (Button) findViewById(R.id.registeradminbtn);
         login = (Button) findViewById(R.id.LoginInsteadBtn);
 
-        DB = new DBHelper(this);
+        DB = new AdmDBHelper(this);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

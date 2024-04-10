@@ -6,13 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
-
-public class DBHelper extends SQLiteOpenHelper {
+public class AdmDBHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "ADMRegister.db";
 
-    public DBHelper(Context context) {
+    public AdmDBHelper(Context context) {
         super(context, "ADMRegister.db", null, 1);
     }
 

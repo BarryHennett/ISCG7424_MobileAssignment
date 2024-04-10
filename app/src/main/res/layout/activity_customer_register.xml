@@ -55,12 +55,12 @@
         <TableRow
             android:paddingTop="30dp">
             <EditText
-                android:id="@+id/FNameCt"
+                android:id="@+id/cusfnameinput"
                 android:hint="First Name"
                  />
 
             <EditText
-                android:id="@+id/LNameCt"
+                android:id="@+id/cuslnameinput"
                 android:hint="Last Name"
                 android:inputType="text"
                 android:layout_column="2"/>
@@ -70,14 +70,14 @@
 
         <EditText
             android:paddingTop="60dp"
-            android:id="@+id/EmailInputCt"
+            android:id="@+id/cusemailinput"
             android:hint="Email Input"
  />
 
 
         <EditText
             android:paddingTop="60dp"
-            android:id="@+id/PasswordInputCt"
+            android:id="@+id/cuspasswordinput"
             android:hint="Password Input"
  />
 
@@ -86,7 +86,7 @@
                 android:text="Register"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:id="@+id/RegisterButtonCt"/>
+                android:id="@+id/registercusbtn"/>
 
         <Button
             android:id="@+id/LoginInsteadBtn"
