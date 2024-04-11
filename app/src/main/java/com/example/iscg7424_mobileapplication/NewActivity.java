@@ -155,15 +155,20 @@ public class NewActivity extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextViewcat = findViewById(R.id.CtgDrpDwn);
 
         // Define data source
-        String[] categories = {"Category 1", "Category 2", "Category 3", "Category 4", "Category 5"};
+        String[] location = {"Test 1", "Test 2", "Test 3", "Test 4", "Test 5"};
+
+        String[] categories = {"Test 1", "Test 2", "Test 3", "Test 4", "Test 5"};
 
         // Create adapter
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_dropdown_item_1line, categories);
+                android.R.layout.simple_dropdown_item_1line, location);
 
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this,
+                android.R.layout.simple_dropdown_item_1line, categories);
+        
         // Set adapter to AutoCompleteTextView
         autoCompleteTextViewloc.setAdapter(adapter);
-        autoCompleteTextViewcat.setAdapter(adapter);
+        autoCompleteTextViewcat.setAdapter(adapter2);
 
     }
 
