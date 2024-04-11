@@ -43,7 +43,6 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_column="1"
-                android:id="@+id/activityNameEditText"
                 />
 
             <EditText
@@ -51,7 +50,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="25sp"
+                android:id="@+id/activityNameEditText"
                 />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -125,14 +126,16 @@
                 android:textSize="25sp"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
+                android:inputType="number"
                 android:layout_column="1"
-                android:id="@+id/activityPricingEditText"
+
                 />
         <EditText
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="25sp"
+            android:id="@+id/activityPricingEditText"
             />
             <TextView
                 android:layout_width="wrap_content"
@@ -142,13 +145,14 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_column="1"
-                android:id="@+id/activityDescriptionEditText"
                 />
         <EditText
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="25sp"
+            android:id="@+id/activityDescriptionEditText"
+
             />
 
         <Button
@@ -157,7 +161,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/submitButton"
+            android:id="@+id/submitButtonnewactivity"
             />
     </TableLayout>
 </ScrollView>
