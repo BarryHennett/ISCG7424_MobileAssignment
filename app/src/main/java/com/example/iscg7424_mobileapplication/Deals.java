@@ -17,7 +17,6 @@ public class Deals {
     String location;
     @ColumnInfo(name="category")
     String category;
-
     @ColumnInfo(name="date")
     String date;
     @ColumnInfo(name="price")
@@ -31,7 +30,7 @@ public class Deals {
         this.name = name;
     }
 
-    public Deals(String name, String location, String category, String price, String desciption) {
+    public Deals(String name, String location, String category, String date, String price, String desciption) {
         this.name = name;
         this.location = location;
         this.category = category;
@@ -64,13 +63,14 @@ public class Deals {
     public void setCategory(String category) {
         this.category = category;
     }
+
     public String getDate() {
         return date;
     }
+
     public void setDate(String date) {
         this.date = date;
     }
-
 
     public String getPrice() {
         return price;
