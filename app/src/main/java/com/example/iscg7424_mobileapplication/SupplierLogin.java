@@ -43,7 +43,7 @@ public class SupplierLogin extends AppCompatActivity {
                     Boolean checkkeyuserpass = DB.checkemailnrest(user, comname, pass);{
                         if (checkkeyuserpass==true){
                             Toast.makeText(SupplierLogin.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), HomePage.class);
+                            Intent intent = new Intent(getApplicationContext(), SupplierProfile.class);
                             startActivity(intent);
                         }else {
                             Toast.makeText(SupplierLogin.this, "Invalid Login", Toast.LENGTH_SHORT).show();

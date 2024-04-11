@@ -43,7 +43,7 @@ public class AdminLogin extends AppCompatActivity {
                     Boolean checkkeyuserpass = DB.checkemailnrest(user, key, pass);{
                         if (checkkeyuserpass==true){
                             Toast.makeText(AdminLogin.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), HomePage.class);
+                            Intent intent = new Intent(getApplicationContext(), AdminProfile.class);
                             startActivity(intent);
                         }else {
                             Toast.makeText(AdminLogin.this, "Invalid Login", Toast.LENGTH_SHORT).show();
