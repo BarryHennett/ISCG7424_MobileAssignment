@@ -17,11 +17,7 @@ import java.util.List;
 
 
 public class BrowseDeals extends AppCompatActivity {
-
-
      RecyclerView recyclerView;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +34,7 @@ public class BrowseDeals extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.r_view);
         RVAdapter adapter = new RVAdapter(this, activityName, activityLocation,
-                activityCategory, activityDate, activityPricing, activityDescription, images);
+               activityCategory, activityDate, activityPricing, activityDescription, images);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
