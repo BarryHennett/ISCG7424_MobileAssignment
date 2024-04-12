@@ -19,10 +19,7 @@ import java.util.List;
 public class BrowseDeals extends AppCompatActivity {
 
 
-    private RecyclerView.LayoutManager layoutManager;
-    private RecyclerView recyclerView;
-
-     RVAdapter rvAdapter;
+     RecyclerView recyclerView;
 
 
     @Override
@@ -31,15 +28,23 @@ public class BrowseDeals extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_browse_deals);
 
+        String[] activityName = {"Test"};
+        String[] activityLocation = {"Test"};
+        String[] activityCategory = {"Test"};
+        String[] activityDate = {"Test"};
+        String[] activityPricing = {"Test"};
+        String[] activityDescription = {"Test"};
+        int[] images = {R.drawable.ic_launcher_foreground};
 
         recyclerView = findViewById(R.id.r_view);
+        RVAdapter adapter = new RVAdapter(this, activityName, activityLocation,
+                activityCategory, activityDate, activityPricing, activityDescription, images);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
-        recyclerView.setLayoutManager(layoutManager);
-
-
-        recyclerView.setAdapter(rvAdapter);
+        recyclerView.setAdapter(adapter);
 
     }
+
+
 
 
     public void goprf(View view) {

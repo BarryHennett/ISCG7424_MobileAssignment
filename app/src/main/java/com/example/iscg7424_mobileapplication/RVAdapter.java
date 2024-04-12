@@ -29,6 +29,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
         this.list = list;
     }
 
+    public RVAdapter(BrowseDeals browseDeals, String[] activityName, String[] activityLocation, String[] activityCategory, String[] activityDate, String[] activityPricing, String[] activityDescription, int[] images) {
+    }
+
     @NonNull
     @Override
     public RVHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
