@@ -21,13 +21,13 @@ public class UserProfile extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_user_profile);
 
-        String[] data = {"Test"};
-        int[] images = {R.drawable.ic_launcher_foreground};
+        //String[] data = {"Test"};
+        //int[] images = {R.drawable.ic_launcher_foreground};
 
-        recyclerView = findViewById(R.id.r_view);
-        RVAdapter adapter = new RVAdapter(this, data, images);
-        recyclerView.setLayoutManager( new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+       // recyclerView = findViewById(R.id.r_view);
+        //RVAdapter adapter = new RVAdapter(this, data, images);
+        //recyclerView.setLayoutManager( new LinearLayoutManager(this));
+        //recyclerView.setAdapter(adapter);
     }
 
     public void gohomepge(View view) {

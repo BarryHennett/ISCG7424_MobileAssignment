@@ -23,61 +23,49 @@ import android.text.TextUtils;
 
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
-    String data[];
-    int[] images;
-    private List<String> dataListFull;
 
-    public RVAdapter(BrowseDeals mainActivity, String[] data, int[] images) {
-        this.data = data;
-        this.images = images;
-        dataListFull = new ArrayList<>(Arrays.asList(data));
-    }
-
-    public RVAdapter(UserProfile mainActivity, String[] data, int[] images) {
-        this.data = data;
-        this.images = images;
+    List<Deals> list;
+    public RVAdapter(List<Deals>list){
+        this.list = list;
     }
 
     @NonNull
     @Override
     public RVHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.rv_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_item, parent, false);
         return new RVHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RVHolder holder, int position) {
-        holder.tv.setText(data[position]);
-        holder.imageView.setImageResource(images[position]);
+        Deals deal = list.get(position);
+        holder.tvname.setText(list.get(position).getName());
+        holder.tvlocation.setText(list.get(position).getLocation());
+        holder.tvcategory.setText(list.get(position).getCategory());
+        holder.tvdate.setText(list.get(position).getDate());
+        holder.tvpricing.setText(list.get(position).getPrice());
+        holder.tvdescription.setText(list.get(position).getDesciption());
+
     }
 
     @Override
     public int getItemCount() {
-        return data.length;
+        return list.size();
     }
 
     public static class RVHolder extends RecyclerView.ViewHolder {
-        TextView tv;
+        TextView tvname,tvlocation,tvcategory,tvdate,tvpricing,tvdescription;
         ImageView imageView;
 
         public RVHolder(@NonNull View itemView) {
             super(itemView);
-            tv = itemView.findViewById(R.id.tvbrdls);
+            tvname = itemView.findViewById(R.id.name);
+            tvlocation = itemView.findViewById(R.id.location);
+            tvcategory  = itemView.findViewById(R.id.category);
+            tvdate  = itemView.findViewById(R.id.date);
+            tvpricing  = itemView.findViewById(R.id.pricing);
+            tvdescription  = itemView.findViewById(R.id.description);
             imageView = itemView.findViewById(R.id.imgvwbrdls);
         }
-    }
-    public void filter(String query) {
-        data = dataListFull.toArray(new String[0]);
-        if (!TextUtils.isEmpty(query)) {
-            List<String> filteredList = new ArrayList<>();
-            for (String item : dataListFull) {
-                if (item.toLowerCase().contains(query.toLowerCase())) {
-                    filteredList.add(item);
-                }
-            }
-            data = filteredList.toArray(new String[0]);
-        }
-        notifyDataSetChanged();
     }
 }

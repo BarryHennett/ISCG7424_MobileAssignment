@@ -10,7 +10,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -19,7 +18,6 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import java.util.List;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -32,7 +30,6 @@ public class NewActivity extends AppCompatActivity {
     EditText activityPricing;
     EditText activityDescription;
     Button submitButton, getdatabtn;
-
     DealsDatabase dealsDB;
 
     List<Deals> dealsList;
@@ -42,6 +39,7 @@ public class NewActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_new);
         setupAutoCompleteTextView();
+
 
         activityName = findViewById(R.id.activityNameEditText);
         activityLocation  = findViewById(R.id.LCTDrpDwn);
@@ -64,8 +62,8 @@ public class NewActivity extends AppCompatActivity {
             }
         };
 
-        dealsDB = Room.databaseBuilder(getApplicationContext(),DealsDatabase.class,
-                "DealsDB").addCallback(myCallBack).build();
+        dealsDB = Room.databaseBuilder(getApplicationContext(),DealsDatabase.class,"DealsDB").addCallback(myCallBack).allowMainThreadQueries().build();
+
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,10 +77,7 @@ public class NewActivity extends AppCompatActivity {
 
                 Deals d1 = new Deals(name, location, category, date, pricing, description);
 
-
                 addDealsInBackground(d1);
-
-
             }
         });
 
@@ -94,8 +89,6 @@ public class NewActivity extends AppCompatActivity {
             }
         });
     }
-
-
 
     public void addDealsInBackground(Deals deals){
         ExecutorService executorService = Executors.newSingleThreadExecutor();

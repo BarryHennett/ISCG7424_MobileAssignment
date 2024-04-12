@@ -19,4 +19,6 @@ public interface DealsDAO {
     public List<Deals> getAllDeals();
     @Query("select * from deals where deals_id==:deals_id")
     public Deals getDeals(int deals_id);
+    @Query("select * from Deals")
+    public List<Deals>getDeals();
 }

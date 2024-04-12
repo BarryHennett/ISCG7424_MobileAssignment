@@ -12,7 +12,13 @@ public class RVHolder extends RecyclerView.ViewHolder {
     public RVHolder(@NonNull View itemView){
         super(itemView);
 
-        tv = itemView.findViewById(R.id.tvbrdls);
+        tv = itemView.findViewById(R.id.name);
+        tv = itemView.findViewById(R.id.location);
+        tv = itemView.findViewById(R.id.category);
+        tv = itemView.findViewById(R.id.date);
+        tv = itemView.findViewById(R.id.pricing);
+        tv = itemView.findViewById(R.id.description);
+
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
