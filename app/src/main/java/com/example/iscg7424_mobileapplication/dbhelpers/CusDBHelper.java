@@ -1,4 +1,4 @@
-package com.example.iscg7424_mobileapplication;
+package com.example.iscg7424_mobileapplication.dbhelpers;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="none"
-                android:text="Select Location"
+                android:hint="Select Location"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,15 +111,26 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="none"
-                android:text="Select Category"
+                android:hint="Select Category"
                 />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <DatePicker
-            android:id="@+id/datePicker"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"/>
+            android:text="Type Date"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_column="1"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:id="@+id/dateEditText"
+            />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -164,15 +175,27 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/submitButtonnewactivity"
+            android:onClick="addDeal"
             />
 
         <Button
-            android:text="Submit Activity"
+            android:text="Display Activity"
             android:textSize="25sp"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/getdataButtonnewactivity"
+            android:id="@+id/displayAll"
+            android:onClick="displayAll"
+            />
+
+        <Button
+            android:text="Delete all Activity"
+            android:textSize="25sp"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/deleteAll"
+            android:onClick="deleteAll"
             />
     </TableLayout>
 </ScrollView>

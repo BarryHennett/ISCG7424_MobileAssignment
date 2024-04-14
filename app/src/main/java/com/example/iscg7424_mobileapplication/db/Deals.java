@@ -1,34 +1,24 @@
-package com.example.iscg7424_mobileapplication;
+package com.example.iscg7424_mobileapplication.db;
+
+import android.os.Parcelable;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "Deals")
-public class Deals {
+@Entity
+public class Deals implements Parcelable {
 
-    @ColumnInfo(name="deals_id")
     @PrimaryKey(autoGenerate = true)
     int id;
-    @ColumnInfo(name="name")
     String name;
-    @ColumnInfo(name="location")
     String location;
-    @ColumnInfo(name="category")
     String category;
-    @ColumnInfo(name="date")
     String date;
-    @ColumnInfo(name="price")
     String price;
-    @ColumnInfo(name="description")
     String desciption;
 
-
-    @Ignore
-    public Deals(String name) {
-        this.name = name;
-    }
 
     public Deals(String name, String location, String category, String date, String price, String desciption) {
         this.name = name;
@@ -37,7 +27,14 @@ public class Deals {
         this.date = date;
         this.price = price;
         this.desciption = desciption;
-        this.id = 0;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -86,5 +83,18 @@ public class Deals {
 
     public void setDesciption(String desciption) {
         this.desciption = desciption;
+    }
+
+    @Override
+    public String toString() {
+        return "Deals{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                ", category='" + category + '\'' +
+                ", date='" + date + '\'' +
+                ", price='" + price + '\'' +
+                ", desciption='" + desciption + '\'' +
+                '}';
     }
 }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.RoomDatabase;
+
+import com.example.iscg7424_mobileapplication.db.Deals;
 
 import java.util.List;
 
@@ -24,20 +27,13 @@ public class BrowseDeals extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_browse_deals);
 
-        String[] activityName = {"Test"};
-        String[] activityLocation = {"Test"};
-        String[] activityCategory = {"Test"};
-        String[] activityDate = {"Test"};
-        String[] activityPricing = {"Test"};
-        String[] activityDescription = {"Test"};
-        int[] images = {R.drawable.ic_launcher_foreground};
+
+
 
         recyclerView = findViewById(R.id.r_view);
-        RVAdapter adapter = new RVAdapter(this, activityName, activityLocation,
-               activityCategory, activityDate, activityPricing, activityDescription, images);
+        RVAdapter adapter = new RVAdapter();
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
-
     }
 
 

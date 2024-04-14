@@ -1,5 +1,7 @@
 package com.example.iscg7424_mobileapplication;
 
+import static android.view.View.inflate;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,16 +9,14 @@ import android.widget.TextView;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.iscg7424_mobileapplication.db.Deals;
+
 import java.util.List;
 
 
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
-
-    List<Deals> list;
-    public RVAdapter(List<Deals>list){
-        this.list = list;
-    }
+public class RVAdapter extends RecyclerView.Adapter<RVHolder> {
 
     String[] tvname;
     String[] tvcategory;
@@ -25,10 +25,9 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
     String[] tvdate;
     String[] tvlocation;
 
-
     int[] images;
 
-    public RVAdapter(BrowseDeals browseDeals, String[] tvname,
+    public RVAdapter(String[] tvname,
                      String[] tvlocation, String[] tvcategory,
                      String[] tvdate, String[] tvpricing,
                      String[] tvdescription, int[] images) {
@@ -46,40 +45,25 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
     @NonNull
     @Override
     public RVHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(
-                parent.getContext()).inflate(R.layout.rv_item, parent, false);
+        LayoutInflater inflater = LayoutInflater.from(
+                parent.getContext());
+        View view = inflater.inflate(R.layout.rv_item, parent, false);
         return new RVHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RVHolder holder, int position) {
-        holder.tvname.setText(list.get(position).getName());
-        holder.tvlocation.setText(list.get(position).getLocation());
-        holder.tvcategory.setText(list.get(position).getCategory());
-        holder.tvdate.setText(list.get(position).getDate());
-        holder.tvpricing.setText(list.get(position).getPrice());
-        holder.tvdescription.setText(list.get(position).getDesciption());
+        holder.tv.setText(tvname[position]);
+        holder.tv.setText(tvlocation[position]);
+        holder.tv.setText(tvcategory[position]);
+        holder.tv.setText(tvdate[position]);
+        holder.tv.setText(tvpricing[position]);
+        holder.tv.setText(tvdescription[position]);
 
     }
 
     @Override
-    public int getItemCount() {
-        return list.size();
-    }
+    public int getItemCount() {return tvname.length;}
 
-    public static class RVHolder extends RecyclerView.ViewHolder {
-        TextView tvname,tvlocation,tvcategory,tvdate,tvpricing,tvdescription;
-        ImageView imageView;
 
-        public RVHolder(@NonNull View itemView) {
-            super(itemView);
-            tvname = itemView.findViewById(R.id.name);
-            tvlocation = itemView.findViewById(R.id.location);
-            tvcategory  = itemView.findViewById(R.id.category);
-            tvdate  = itemView.findViewById(R.id.date);
-            tvpricing  = itemView.findViewById(R.id.pricing);
-            tvdescription  = itemView.findViewById(R.id.description);
-            imageView = itemView.findViewById(R.id.imgvwbrdls);
-        }
-    }
 }
