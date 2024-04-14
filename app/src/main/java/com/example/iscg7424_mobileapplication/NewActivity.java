@@ -64,10 +64,16 @@ public class NewActivity extends AppCompatActivity {
         TextView dealsTextView = findViewById(R.id.dealsTextView);
 
 
-        // Concatenate deals strings to display them in the TextView
+        // Generate a clean string for displaying the deals
         StringBuilder dealsString = new StringBuilder();
         for (Deals deal : deals) {
-            dealsString.append(deal.toString()).append("\n");
+            // Append the deal information without index and any unnecessary characters
+            dealsString.append("Name: ").append(deal.getName()).append("\n")
+                    .append("Location: ").append(deal.getLocation()).append("\n")
+                    .append("Category: ").append(deal.getCategory()).append("\n")
+                    .append("Date: ").append(deal.getDate()).append("\n")
+                    .append("Price: ").append(deal.getPrice()).append("\n")
+                    .append("Description: ").append(deal.getDescription()).append("\n\n");
         }
 
 
