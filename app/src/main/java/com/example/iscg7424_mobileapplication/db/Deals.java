@@ -8,7 +8,7 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class Deals implements Parcelable {
+public class Deals {
 
     @PrimaryKey(autoGenerate = true)
     int id;
@@ -17,16 +17,16 @@ public class Deals implements Parcelable {
     String category;
     String date;
     String price;
-    String desciption;
+    String description;
 
 
-    public Deals(String name, String location, String category, String date, String price, String desciption) {
+    public Deals(String name, String location, String category, String date, String price, String description) {
         this.name = name;
         this.location = location;
         this.category = category;
         this.date = date;
         this.price = price;
-        this.desciption = desciption;
+        this.description = description;
     }
 
     public int getId() {
@@ -77,12 +77,12 @@ public class Deals implements Parcelable {
         this.price = price;
     }
 
-    public String getDesciption() {
-        return desciption;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesciption(String desciption) {
-        this.desciption = desciption;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -94,7 +94,7 @@ public class Deals implements Parcelable {
                 ", category='" + category + '\'' +
                 ", date='" + date + '\'' +
                 ", price='" + price + '\'' +
-                ", desciption='" + desciption + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }

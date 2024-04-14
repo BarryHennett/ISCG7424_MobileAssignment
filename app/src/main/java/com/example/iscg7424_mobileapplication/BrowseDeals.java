@@ -30,10 +30,10 @@ public class BrowseDeals extends AppCompatActivity {
 
 
 
-        recyclerView = findViewById(R.id.r_view);
-        RVAdapter adapter = new RVAdapter();
-        recyclerView.setLayoutManager( new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+        //recyclerView = findViewById(R.id.r_view);
+        //RVAdapter adapter = new RVAdapter();
+        //recyclerView.setLayoutManager( new LinearLayoutManager(this));
+        //recyclerView.setAdapter(adapter);
     }
 
 

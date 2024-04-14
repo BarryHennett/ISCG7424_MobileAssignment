@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -52,11 +53,6 @@ public class NewActivity extends AppCompatActivity {
         Deals d = new Deals(name,location,category,date,price,description);
         dealsDAO.insertDeal(d);
 
-
-
-
-
-
     }
 
 
@@ -64,10 +60,28 @@ public class NewActivity extends AppCompatActivity {
     public void displayAll(View view) {
         List<Deals> deals = dealsDAO.getAllDeals();
 
-        // Start DisplayDataActivity and pass the list of deals
-        Intent intent = new Intent(this, BrowseDeals.class);
-        intent.putParcelableArrayListExtra("deals", new ArrayList<Deals>(deals));
-        startActivity(intent);
+        // Assuming you have a TextView with the id "dealsTextView" in your layout
+        TextView dealsTextView = findViewById(R.id.dealsTextView);
+
+
+        // Concatenate deals strings to display them in the TextView
+        StringBuilder dealsString = new StringBuilder();
+        for (Deals deal : deals) {
+            dealsString.append(deal.toString()).append("\n");
+        }
+
+
+        // Set the text of the TextView to the deals string
+        dealsTextView.setText(dealsString.toString());
+
+
+
+
+
+
+
+        //List<Deals> deals = dealsDAO.getAllDeals();
+        //Toast.makeText(this, deals.toString(),Toast.LENGTH_LONG).show();
     }
 
     public void deleteAll(View view) {
