@@ -11,10 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.RoomDatabase;
-import com.example.iscg7424_mobileapplication.db.Deals;
-import com.example.iscg7424_mobileapplication.db.DealsDAO;
-import com.example.iscg7424_mobileapplication.db.DealsDatabase;
+
 
 import java.util.List;
 
@@ -29,12 +26,14 @@ public class BrowseDeals extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_browse_deals);
 
-
-
-        String []data =  {"NZ","AUSTRALIA","CHINA","USA","NORTH KOREA","JAPAN","BALI","FIJI"};
+        String [] name = {"Extreme Rafts","Rock Climbing","SnowBoarding"};
+        String [] location = {"Auckland, NZ","Wellington, NZ","Queenstown, NZ"};
+        String [] category = {"Water","Adventure","Snow"};
+        String [] pricing = {"$139.99","$199.99","$299.99"};
+        int [] images = {R.drawable.rafting2, R.drawable.rockclimbing2, R.drawable.snowboarding2};
 
         recyclerView = findViewById(R.id.r_view);
-        RVAdapter2 adapter = new RVAdapter2(data);
+        RVAdapter2 adapter = new RVAdapter2(this, name, location, category, pricing,images);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
     }

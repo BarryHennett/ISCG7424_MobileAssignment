@@ -23,13 +23,9 @@
         <activity
             android:name=".UserProfile"
             android:exported="false" />
-        <activity
-            android:name=".SupplierRegister"
-            android:exported="false" />
 
-        <activity
-            android:name=".AdminRegister"
-            android:exported="false" />
+
+
         <activity
             android:name=".DealDetails"
             android:exported="false" />
@@ -39,6 +35,7 @@
             android:exported="false" />
         <activity
             android:name=".AdminLogin"
+
             android:exported="false" />
         <activity
             android:name=".SupplierLogin"

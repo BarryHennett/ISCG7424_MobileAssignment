@@ -78,7 +78,8 @@
                 android:text="Login"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:id="@+id/adminlogbtn"/>
+                android:id="@+id/adminlogbtn"
+                android:onClick="login"/>
 
             <Button
                 android:id="@+id/admregisterInsteadBtn"

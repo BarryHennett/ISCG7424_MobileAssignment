@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/BrowseDeals"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".BrowseDeals">
 
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:stretchColumns="1">
@@ -33,39 +34,39 @@
                 />
         </TableRow>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/roundedlayout">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:background="@drawable/roundedlayout">
+                android:layout_weight="1"
+                android:text="Button 1"
+                android:layout_marginEnd="5dp"/>
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button 1"
-                    android:layout_marginEnd="5dp"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button 2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"/>
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button 2"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"/>
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button 3"
-                    android:layout_marginStart="5dp"/>
-            </LinearLayout>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button 3"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
 
         <SearchView
             android:id="@+id/search_view"
@@ -74,11 +75,12 @@
             android:hint="Search Activity"
             tools:ignore="HardcodedText" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/r_view"
-        android:onClick="godldtls">
-    </androidx.recyclerview.widget.RecyclerView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:id="@+id/r_view"
+            android:onClick="godldtls">
+        </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>
 </RelativeLayout>
