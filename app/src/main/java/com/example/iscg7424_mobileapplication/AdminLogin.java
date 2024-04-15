@@ -16,7 +16,6 @@ public class AdminLogin extends AppCompatActivity {
 
     EditText adminkey, email, password;
     Button login, register;
-    AdmDBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,41 +26,27 @@ public class AdminLogin extends AppCompatActivity {
         email = (EditText) findViewById(R.id.adminemaillgn);
         password = (EditText) findViewById(R.id.admpwordlgn);
         login = (Button) findViewById(R.id.adminlogbtn);
-        DB = new AdmDBHelper(this);
+
+    }
+
+    public void login() {
+        String user = email.getText().toString().trim();
+        String pass = password.getText().toString().trim();
+        if (user.equals("techsupportnep") & pass.equals("techsupportnep")) {
+            Toast.makeText(this, "username and password matched!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "username and password do not matched!", Toast.LENGTH_LONG).show();
+        }
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                String key = adminkey.getText().toString();
-                String user = email.getText().toString();
-                String pass = password.getText().toString();
+            public void onClick(View view) {
+                login();
 
-                if(key.equals("")||user.equals("")||pass.equals(""))
-                    Toast.makeText(AdminLogin.this, "Please Enter all the fields", Toast.LENGTH_SHORT).show();
-                else {
-                    Boolean checkkeyuserpass = DB.checkemailnrest(user, key, pass);{
-                        if (checkkeyuserpass==true){
-                            Toast.makeText(AdminLogin.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(), AdminProfile.class);
-                            startActivity(intent);
-                        }else {
-                            Toast.makeText(AdminLogin.this, "Invalid Login", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }
-            }
-        });
-        register = (Button) findViewById(R.id.admregisterInsteadBtn);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), AdminRegister.class);
-                startActivity(intent);
             }
         });
     }
-
     public void GoCusLogin(View view) {
         Intent intent = new Intent(this, CustomerLogin.class);
         startActivity(intent);
