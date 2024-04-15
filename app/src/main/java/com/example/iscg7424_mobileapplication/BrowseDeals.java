@@ -12,8 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.RoomDatabase;
-
 import com.example.iscg7424_mobileapplication.db.Deals;
+import com.example.iscg7424_mobileapplication.db.DealsDAO;
+import com.example.iscg7424_mobileapplication.db.DealsDatabase;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ import java.util.List;
 
 public class BrowseDeals extends AppCompatActivity {
      RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +31,13 @@ public class BrowseDeals extends AppCompatActivity {
 
 
 
+        String []data =  {"NZ","AUSTRALIA","CHINA","USA","NORTH KOREA","JAPAN","BALI","FIJI"};
 
-        //recyclerView = findViewById(R.id.r_view);
-        //RVAdapter adapter = new RVAdapter();
-        //recyclerView.setLayoutManager( new LinearLayoutManager(this));
-        //recyclerView.setAdapter(adapter);
+        recyclerView = findViewById(R.id.r_view);
+        RVAdapter2 adapter = new RVAdapter2(data);
+        recyclerView.setLayoutManager( new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
     }
-
-
 
 
     public void goprf(View view) {

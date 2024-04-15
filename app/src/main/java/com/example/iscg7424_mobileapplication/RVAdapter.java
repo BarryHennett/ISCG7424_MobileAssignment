@@ -13,11 +13,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.iscg7424_mobileapplication.db.Deals;
 
 import java.util.List;
+import com.example.iscg7424_mobileapplication.db.Deals;
+import com.example.iscg7424_mobileapplication.db.DealsDAO;
+import com.example.iscg7424_mobileapplication.db.DealsDatabase;
 
 
 
 public class RVAdapter extends RecyclerView.Adapter<RVHolder> {
 
+    DealsDAO dealsDAO;
+
+    public List<Deals> d;
     String[] tvname;
     String[] tvcategory;
     String[] tvpricing;
@@ -27,10 +33,12 @@ public class RVAdapter extends RecyclerView.Adapter<RVHolder> {
 
     int[] images;
 
+
     public RVAdapter(String[] tvname,
                      String[] tvlocation, String[] tvcategory,
                      String[] tvdate, String[] tvpricing,
                      String[] tvdescription, int[] images) {
+
 
         this.tvname = tvname;
         this.tvlocation = tvlocation;
@@ -39,6 +47,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVHolder> {
         this.tvpricing  = tvpricing;
         this.tvdescription  = tvdescription;
         this.images = images;
+
 
     }
 

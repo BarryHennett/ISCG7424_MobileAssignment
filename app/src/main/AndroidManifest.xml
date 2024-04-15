@@ -47,14 +47,14 @@
             android:name=".CustomerLogin"
             android:exported="false" />
         <activity
-            android:name=".BrowseDeals"
+            android:name=".NewActivity"
 
             android:exported="false" />
         <activity
             android:name=".CustomerRegister"
             android:exported="false" />
         <activity
-            android:name=".NewActivity"
+            android:name=".BrowseDeals"
 
             android:exported="true">
             <intent-filter>
