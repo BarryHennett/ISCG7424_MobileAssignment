@@ -33,7 +33,7 @@ public class BrowseDeals extends AppCompatActivity {
         int [] images = {R.drawable.rafting2, R.drawable.rockclimbing2, R.drawable.snowboarding2};
 
         recyclerView = findViewById(R.id.r_view);
-        RVAdapter2 adapter = new RVAdapter2(this, name, location, category, pricing,images);
+        RVAdapter adapter = new RVAdapter(this, name, location, category, pricing,images);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
     }

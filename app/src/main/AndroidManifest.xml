@@ -12,17 +12,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ISCG7424_MobileApplication"
         tools:targetApi="31">
+
         <activity
-            android:name=".Login_Page"
+            android:name=".AdminLogin"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdminRegister"
             android:exported="false" />
         <activity
-            android:name=".UserActivity"
+            android:name=".SupplierLogin"
             android:exported="false" />
         <activity
             android:name=".SupplierProfile"
             android:exported="false" />
         <activity
+            android:name=".SupplierRegister"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLogin"
+            android:exported="false" />
+        <activity
             android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerRegister"
+            android:exported="false" />
+        <activity
+            android:name=".NewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrowseDeals"
             android:exported="false" />
         <activity
             android:name=".DealDetails"
@@ -30,23 +50,11 @@
         <activity
             android:name=".HomePage"
             android:exported="false" />
+
+
         <activity
-            android:name=".AdminLogin"
-            android:exported="false" />
-        <activity
-            android:name=".SupplierLogin"
-            android:exported="false" />
-        <activity
-            android:name=".CustomerLogin"
-            android:exported="false" />
-        <activity
-            android:name=".NewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CustomerRegister"
-            android:exported="false" />
-        <activity
-            android:name=".BrowseDeals"
+            android:name=".AdminProfile"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

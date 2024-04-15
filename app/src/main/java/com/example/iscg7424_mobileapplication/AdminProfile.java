@@ -8,24 +8,29 @@ import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.iscg7424_mobileapplication.dbhelpers.AdmDBHelper;
 
 public class AdminProfile extends AppCompatActivity {
-    EditText adminkey, email, password;
-    Button login, register;
-    AdmDBHelper DB;
+    RecyclerView recyclerView2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_supplier_profile);
+        setContentView(R.layout.activity_admin_profile);
 
-        adminkey = (EditText) findViewById(R.id.admkeylgn);
-        email = (EditText) findViewById(R.id.adminemaillgn);
-        password = (EditText) findViewById(R.id.admpwordlgn);
-        login = (Button) findViewById(R.id.adminlogbtn);
-        DB = new AdmDBHelper(this);
+        String [] fname = {"Harry","Christopher"};
+        String [] lname = {"Bennett","Dronjak"};
+        String [] email = {"harry@gmail.com","christopher@gmail.com"};
+
+
+        recyclerView2 = findViewById(R.id.r_admin_view);
+        RVAdapter2 adapter = new RVAdapter2(this, fname, lname, email);
+        recyclerView2.setLayoutManager( new LinearLayoutManager(this));
+        recyclerView2.setAdapter(adapter);
 
     }
 

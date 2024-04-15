@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/userprofile"
+    android:id="@+id/supplierprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SupplierProfile">
@@ -29,25 +29,25 @@
             android:paddingBottom="20dp">
             <TextView
                 android:textSize="30dp"
-                android:text="First Name:"/>
+                android:text="First Name: Harry"/>
         </TableRow>
         <TableRow
             android:paddingBottom="20dp">
             <TextView
                 android:textSize="30dp"
-                android:text="Last Name:"/>
+                android:text="Last Name: Bennett"/>
         </TableRow>
         <TableRow
             android:paddingBottom="20dp">
             <TextView
                 android:textSize="30dp"
-                android:text="Company Name:"/>
+                android:text="Company Name: Proteine"/>
         </TableRow>
         <TableRow
             android:paddingBottom="20dp">
             <TextView
                 android:textSize="30dp"
-                android:text="Email:"/>
+                android:text="Email: Harry@gmail.com"/>
         </TableRow>
 
         <Button
@@ -61,7 +61,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/r_view">
+            android:id="@+id/r_supplier_view">
         </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>
 </RelativeLayout>

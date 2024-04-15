@@ -24,24 +24,22 @@
                 android:onClick="gohomepge"
                 android:paddingBottom="20dp"/>
 
-        <TableRow
-            android:paddingBottom="20dp">
+
             <TextView
                 android:textSize="30dp"
-                android:text="First Name:"/>
-        </TableRow>
-        <TableRow
-            android:paddingBottom="20dp">
+                android:paddingBottom="20dp"
+                android:text="First Name: Harry"/>
+
             <TextView
                 android:textSize="30dp"
-                android:text="Last Name:"/>
-        </TableRow>
-        <TableRow
-            android:paddingBottom="20dp">
+                android:paddingBottom="20dp"
+
+                android:text="Last Name: Bennett"/>
             <TextView
                 android:textSize="30dp"
-                android:text="Email:"/>
-        </TableRow>
+                android:paddingBottom="20dp"
+
+                android:text="Email: Harry@gmail.com"/>
 
         <TableRow
             android:layout_marginTop="20dp"
@@ -66,7 +64,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/r_view">
+            android:id="@+id/r_admin_view">
         </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>
 </RelativeLayout>

@@ -3,64 +3,56 @@ package com.example.iscg7424_mobileapplication;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class RVAdapter2 extends RecyclerView.Adapter<RVAdapter2.RVHolder> {
+public class RVAdapter2 extends RecyclerView.Adapter<RVAdapter2.RVHolder2> {
 
-    String [] name;
-    String [] location;
-    String [] category;
-    String [] pricing;
-    int[] images;
-    public RVAdapter2(BrowseDeals browseDeals, String [] name, String [] location, String [] category, String [] pricing, int [] images){
-        this.name = name;
-        this.location = location;
-        this.category = category;
-        this.pricing = pricing;
-        this.images = images;
+    String [] fname;
+    String [] lname;
+    String [] email;
+
+    public RVAdapter2( AdminProfile adminProfile,
+                      String [] fname, String [] lname, String [] email){
+        this.fname = fname;
+        this.lname = lname;
+        this.email = email;
+
     }
 
     @NonNull
     @Override
-    public RVHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RVHolder2 onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
-        View view = inflater.inflate(R.layout.rv_item, parent, false);
-        return new RVHolder(view);
+        View view = inflater.inflate(R.layout.rv_admin_profile, parent, false);
+        return new RVHolder2(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RVHolder holder, int position) {
-        holder.name.setText(name[position]);
-        holder.location.setText(location[position]);
-        holder.category.setText(category[position]);
-        holder.pricing.setText(pricing[position]);
-        holder.imageView.setImageResource(images[position]);
+    public void onBindViewHolder(@NonNull RVHolder2 holder, int position) {
+        holder.fname.setText(fname[position]);
+        holder.lname.setText(lname[position]);
+        holder.email.setText(email[position]);
     }
 
     @Override
     public int getItemCount()
-    {return name.length;}
-    public static class RVHolder extends RecyclerView.ViewHolder {
-        TextView tv;
-        TextView name;
-        TextView location;
-        TextView category;
-        TextView pricing;
-        ImageView imageView;
+    {return fname.length;}
+    public static class RVHolder2 extends RecyclerView.ViewHolder {
+        TextView fname;
+        TextView lname;
+        TextView email;
 
-        public RVHolder(@NonNull View itemView) {
+        public RVHolder2(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.name);
-            location = itemView.findViewById(R.id.location);
-            category = itemView.findViewById(R.id.category);
-            pricing = itemView.findViewById(R.id.pricing);
-            imageView = itemView.findViewById(R.id.imgvwbrdls);
+            fname = itemView.findViewById(R.id.fname);
+            lname = itemView.findViewById(R.id.lname);
+            email = itemView.findViewById(R.id.email);
+
         }
     }
 }
