@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/userprofile"
+    android:id="@+id/adminprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SupplierProfile">
+    tools:context=".AdminProfile">
 
 
     <TableLayout
@@ -17,7 +17,9 @@
 
             <ImageButton
                 android:id="@+id/imgbtnbrsdls"
-                android:src="@drawable/ic_launcher_foreground"
+                android:src="@drawable/dailydealslogo"
+                android:backgroundTint="@color/white"
+
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"
                 android:paddingBottom="20dp"/>
@@ -38,15 +40,29 @@
             android:paddingBottom="20dp">
             <TextView
                 android:textSize="30dp"
-                android:text="Company Name:"/>
-        </TableRow>
-        <TableRow
-            android:paddingBottom="20dp">
-            <TextView
-                android:textSize="30dp"
                 android:text="Email:"/>
         </TableRow>
 
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/customerdtls"
+                android:onClick="customerdtls"
+                android:text="Customer Dtls"
+                tools:ignore="HardcodedText" />
+
+
+
+            <Button
+                android:id="@+id/supplierdtls"
+                android:layout_gravity="end"
+                android:onClick="supplierdtls"
+                android:text="Supplier DTLS"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

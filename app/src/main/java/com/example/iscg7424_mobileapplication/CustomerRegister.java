@@ -44,7 +44,7 @@ public class CustomerRegister extends AppCompatActivity {
                         Boolean insert = DB.insertData(user,firname,lasname,pass);
                         if (insert==true){
                             Toast.makeText(CustomerRegister.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(),HomePage.class);
+                            Intent intent = new Intent(getApplicationContext(),CustomerLogin.class);
                             startActivity(intent);
                         }
                         else{

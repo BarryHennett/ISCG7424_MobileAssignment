@@ -21,7 +21,9 @@
             <ImageButton
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
-                android:src="@drawable/ic_launcher_foreground"
+                android:src="@drawable/dailydealslogo"
+                android:backgroundTint="@color/white"
+
                 tools:ignore="HardcodedText"
                 android:contentDescription="image"
                 android:onClick="gohomepge"/>
@@ -40,31 +42,37 @@
             android:orientation="horizontal"
             android:layout_marginTop="20dp"
             android:padding="10dp"
+
             android:background="@drawable/roundedlayout">
 
             <Button
                 android:id="@+id/button1"
+                android:textSize="13dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button 1"
+                android:text="Auckland"
                 android:layout_marginEnd="5dp"/>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="0dp"
+                android:textSize="13dp"
+
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button 2"
+                android:text="Wellington"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"/>
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="0dp"
+                android:textSize="13dp"
+
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button 3"
+                android:text="Queenstown"
                 android:layout_marginStart="5dp"/>
         </LinearLayout>
 

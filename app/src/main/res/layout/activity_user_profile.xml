@@ -19,7 +19,9 @@
         <ImageButton
             android:id="@+id/imgbtnbrsdls"
             android:layout_column="0"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/dailydealslogo"
+            android:backgroundTint="@color/white"
+
             tools:ignore="HardcodedText"
             android:onClick="gohomepge"
             android:paddingBottom="20dp"/>

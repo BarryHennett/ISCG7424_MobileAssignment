@@ -76,18 +76,9 @@ public class NewActivity extends AppCompatActivity {
                     .append("Description: ").append(deal.getDescription()).append("\n\n");
         }
 
-
         // Set the text of the TextView to the deals string
         dealsTextView.setText(dealsString.toString());
 
-
-
-
-
-
-
-        //List<Deals> deals = dealsDAO.getAllDeals();
-        //Toast.makeText(this, deals.toString(),Toast.LENGTH_LONG).show();
     }
 
     public void deleteAll(View view) {
@@ -105,7 +96,6 @@ public class NewActivity extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.LCTDrpDwn);
         AutoCompleteTextView autoCompleteTextView2 = findViewById(R.id.CtgDrpDwn);
 
-        // Define data source
         String[] location = {"location 1", "location 2", "location 3", "location 4", "location 5"};
 
         String[] categories = {"Category 1", "Category 2", "Category 3", "Category 4", "Category 5"};

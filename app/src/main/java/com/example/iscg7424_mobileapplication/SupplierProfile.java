@@ -29,4 +29,6 @@ public class SupplierProfile extends AppCompatActivity {
         Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
+
+
 }

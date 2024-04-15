@@ -6,15 +6,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import java.util.HashMap;
-import java.util.Map;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import com.example.iscg7424_mobileapplication.dbhelpers.AdmDBHelper;
 public class AdminLogin extends AppCompatActivity {
 
     EditText adminkey, email, password;
     Button login, register;
+    AdmDBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,61 +28,41 @@ public class AdminLogin extends AppCompatActivity {
         email = (EditText) findViewById(R.id.adminemaillgn);
         password = (EditText) findViewById(R.id.admpwordlgn);
         login = (Button) findViewById(R.id.adminlogbtn);
+        DB = new AdmDBHelper(this);
 
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String key = adminkey.getText().toString();
+                String user = email.getText().toString();
+                String pass = password.getText().toString();
 
+                if(key.equals("")||user.equals("")||pass.equals(""))
+                    Toast.makeText(AdminLogin.this, "Please Enter all the fields", Toast.LENGTH_SHORT).show();
+                else {
+                    Boolean checkkeyuserpass = DB.checkemailnrest(user, key, pass);{
+                        if (checkkeyuserpass==true){
+                            Toast.makeText(AdminLogin.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), AdminProfile.class);
+                            startActivity(intent);
+                        }else {
+                            Toast.makeText(AdminLogin.this, "Invalid Login", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+            }
+        });
+        register = (Button) findViewById(R.id.admregisterInsteadBtn);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(getApplicationContext(), AdminRegister.class);
+                startActivity(intent);
+            }
+        });
     }
 
-
-
-
-    public static class AccountManager {
-        private Map<String, String> accounts;
-        private String adminKey;
-
-        public AccountManager() {
-            // Initialize the accounts map with username-password pairs
-            accounts = new HashMap<>();
-            accounts.put("user1@example.com", "password1");
-            accounts.put("user2@example.com", "password2");
-            // Add more accounts as needed
-
-            // Set the admin key
-            adminKey = "admin123";
-        }
-
-        public boolean isValidAccount(String username, String password) {
-            // Check if the provided username and password match any of the accounts
-            String storedPassword = accounts.get(username);
-            return storedPassword != null && storedPassword.equals(password);
-        }
-
-        public boolean isAdminKeyValid(String key) {
-            // Check if the provided key matches the admin key
-            return key.equals(adminKey);
-        }
-    }
-
-    public void login() {
-        String user = email.getText().toString().trim();
-        String pass = password.getText().toString().trim();
-        String key = adminkey.getText().toString().trim();
-
-        AccountManager accountManager = new AccountManager();
-
-        if (accountManager.isAdminKeyValid(key)) {
-
-            Toast.makeText(this, "Admin key is valid!", Toast.LENGTH_LONG).show();
-        } else if (accountManager.isValidAccount(user, pass)) {
-            Intent intent = new Intent(getApplicationContext(), AdminProfile.class);
-            startActivity(intent);
-
-            Toast.makeText(this, "Username and password matched!", Toast.LENGTH_LONG).show();
-
-        } else {
-            Toast.makeText(this, "Invalid credentials!", Toast.LENGTH_LONG).show();
-        }
-    }
     public void GoCusLogin(View view) {
         Intent intent = new Intent(this, CustomerLogin.class);
         startActivity(intent);
