@@ -5,7 +5,8 @@
     android:id="@+id/supplierprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SupplierProfile">
+    tools:context=".SupplierProfile"
+    android:background="@color/Lblue">
 
 
     <TableLayout
@@ -18,7 +19,7 @@
             <ImageButton
                 android:id="@+id/imgbtnbrsdls"
                 android:src="@drawable/dailydealslogo"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
 
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"
@@ -28,29 +29,39 @@
         <TableRow
             android:paddingBottom="20dp">
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:textSize="30dp"
                 android:text="First Name: Harry"/>
         </TableRow>
         <TableRow
             android:paddingBottom="20dp">
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:textSize="30dp"
                 android:text="Last Name: Bennett"/>
         </TableRow>
         <TableRow
             android:paddingBottom="20dp">
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:textSize="30dp"
                 android:text="Company Name: Proteine"/>
         </TableRow>
         <TableRow
             android:paddingBottom="20dp">
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:textSize="30dp"
                 android:text="Email: Harry@gmail.com"/>
         </TableRow>
 
         <Button
+        android:backgroundTint="@color/Lorange"
+            
             android:id="@+id/addnewactivity"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
@@ -59,6 +70,8 @@
             tools:ignore="HardcodedText" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:fontFamily="@font/fontmon"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/r_supplier_view">

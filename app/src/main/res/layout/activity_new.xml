@@ -6,7 +6,10 @@
     android:id="@+id/newactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewActivity">
+    tools:context=".NewActivity"
+    android:background="@color/Lblue"
+
+    >
 
 
     <TableLayout
@@ -20,6 +23,9 @@
         <TableRow>
 
             <Button
+                android:backgroundTint="@color/Lorange"
+                android:textStyle="bold"
+
                 android:layout_width="100dp"
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
@@ -29,6 +35,9 @@
                 />
 
             <Button
+                android:backgroundTint="@color/Lorange"
+                android:textStyle="bold"
+
                 android:id="@+id/supprf"
                 android:layout_column="2"
                 android:layout_marginEnd="10dp"
@@ -43,6 +52,8 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_column="1"
+                android:fontFamily="@font/fontmon"
+
                 />
 
             <EditText
@@ -51,6 +62,8 @@
                 android:layout_gravity="center"
                 android:textSize="25sp"
                 android:id="@+id/activityNameEditText"
+                android:fontFamily="@font/fontmon"
+
                 />
 
             <TextView
@@ -61,6 +74,8 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_column="1"
+                android:fontFamily="@font/fontmon"
+
                 />
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -71,6 +86,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/textInputLayoutloc"
+            android:fontFamily="@font/fontmon"
 
             >
 
@@ -81,6 +97,8 @@
                 android:layout_weight="1"
                 android:inputType="none"
                 android:hint="Select Location"
+                android:fontFamily="@font/fontmon"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,6 +111,8 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_column="1"
+                android:fontFamily="@font/fontmon"
+
                 />
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -112,6 +132,8 @@
                 android:layout_weight="1"
                 android:inputType="none"
                 android:hint="Select Category"
+                android:fontFamily="@font/fontmon"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <TextView
@@ -122,6 +144,8 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:layout_column="1"
+            android:fontFamily="@font/fontmon"
+
             />
         <EditText
             android:layout_width="300dp"
@@ -129,6 +153,8 @@
             android:layout_gravity="center"
             android:textSize="25sp"
             android:id="@+id/dateEditText"
+            android:fontFamily="@font/fontmon"
+
             />
 
 
@@ -141,6 +167,7 @@
                 android:textStyle="bold"
                 android:inputType="number"
                 android:layout_column="1"
+                android:fontFamily="@font/fontmon"
 
                 />
         <EditText
@@ -149,6 +176,8 @@
             android:layout_gravity="center"
             android:textSize="25sp"
             android:id="@+id/activityPricingEditText"
+            android:fontFamily="@font/fontmon"
+
             />
             <TextView
                 android:layout_width="wrap_content"
@@ -158,6 +187,8 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_column="1"
+                android:fontFamily="@font/fontmon"
+
                 />
         <EditText
             android:layout_width="300dp"
@@ -165,10 +196,13 @@
             android:layout_gravity="center"
             android:textSize="25sp"
             android:id="@+id/activityDescriptionEditText"
+            android:fontFamily="@font/fontmon"
 
             />
 
         <Button
+            android:name=".AdminProfile"
+
             android:text="Submit Activity"
             android:textSize="25sp"
             android:layout_width="20dp"
@@ -179,6 +213,8 @@
             />
 
         <Button
+            android:name=".AdminProfile"
+
             android:text="Display Activity"
             android:textSize="25sp"
             android:layout_width="20dp"
@@ -189,6 +225,8 @@
             />
 
         <Button
+            android:name=".AdminProfile"
+
             android:text="Delete all Activity"
             android:textSize="25sp"
             android:layout_width="20dp"
@@ -205,6 +243,8 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:id="@+id/dealsTextView"
+            android:fontFamily="@font/fontmon"
+
             />
 
     </TableLayout>

@@ -6,7 +6,8 @@
     android:id="@+id/adminlogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminLogin">
+    tools:context=".AdminLogin"
+    android:background="@color/Lblue">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
                 android:src="@drawable/dailydealslogo"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
 
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"/>
@@ -28,7 +29,8 @@
             android:layout_marginBottom="20dp">
 
             <Button
-                android:id="@+id/cuslgnbtn"
+        android:backgroundTint="@color/Lorange"
+                            android:id="@+id/cuslgnbtn"
                 android:text="Customer"
                 android:onClick="GoCusLogin"
                 tools:ignore="HardcodedText"
@@ -36,19 +38,23 @@
                 />
 
             <Button
-                android:id="@+id/cussupbtn"
+        android:backgroundTint="@color/Lorange"
+                            android:id="@+id/cussupbtn"
                 android:text="Supplier"
                 android:onClick="GoSupLoginbtn"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="center"
+
                 />
 
             <Button
-                android:id="@+id/cusadmlgnbtn"
+        android:backgroundTint="@color/Lorange"
+                            android:id="@+id/cusadmlgnbtn"
                 android:text="Administration"
                 android:onClick="GoAdminLogin"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="end"
+
                 />
         </TableRow>
 
@@ -56,37 +62,47 @@
             android:paddingTop="60dp"
             android:hint="Admin Key Input"
             tools:ignore="HardcodedText"
-            android:id="@+id/admkeylgn"/>
+            android:id="@+id/admkeylgn"
+            android:fontFamily="@font/fontmon"
+            />
 
 
         <EditText
             android:paddingTop="60dp"
             android:hint="Email Input"
             tools:ignore="HardcodedText"
-            android:id="@+id/adminemaillgn"/>
+            android:id="@+id/adminemaillgn"
+            android:fontFamily="@font/fontmon"
+            />
 
         <EditText
             android:paddingTop="60dp"
             android:hint="Password Input"
             tools:ignore="HardcodedText"
-            android:id="@+id/admpwordlgn"/>
+            android:id="@+id/admpwordlgn"
+            android:fontFamily="@font/fontmon"
+            />
 
 
         <TableRow
             android:paddingTop="60dp">
             <Button
-                android:text="Login"
+        android:backgroundTint="@color/Lorange"
+                            android:text="Login"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:id="@+id/adminlogbtn"
-                android:onClick="login"/>
+                android:onClick="login"
+                />
 
             <Button
-                android:id="@+id/admregisterInsteadBtn"
+        android:backgroundTint="@color/Lorange"
+                            android:id="@+id/admregisterInsteadBtn"
                 android:text="Register Instead"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_column="2"
+
                 />
         </TableRow>
 

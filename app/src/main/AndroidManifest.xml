@@ -11,13 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ISCG7424_MobileApplication"
+        android:fontFamily="@font/fontmon"
         tools:targetApi="31">
 
         <activity
             android:name=".AdminLogin"
             android:exported="false" />
         <activity
-            android:name=".AdminProfile"
+            android:name=".DealDetails"
+
             android:exported="false" />
         <activity
             android:name=".AdminRegister"
@@ -41,7 +43,8 @@
             android:name=".CustomerRegister"
             android:exported="false" />
         <activity
-            android:name=".NewActivity"
+            android:name=".AdminProfile"
+
             android:exported="false" />
         <activity
             android:name=".BrowseDeals"
@@ -54,7 +57,7 @@
 
 
         <activity
-            android:name=".DealDetails"
+            android:name=".NewActivity"
 
             android:exported="true">
             <intent-filter>

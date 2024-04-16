@@ -6,7 +6,8 @@
     android:id="@+id/adminregister"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminRegister">
+    tools:context=".AdminRegister"
+    android:background="@color/Lblue">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
                 android:src="@drawable/dailydealslogo"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
 
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"/>
@@ -28,6 +29,8 @@
             android:layout_marginBottom="20dp">
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/gocusregbtn"
                 android:text="Customer"
                 android:onClick="GoCusReg"
@@ -36,14 +39,19 @@
                 />
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/gosupregbtn"
                 android:text="Supplier"
                 android:onClick="GoSupReg"
                 tools:ignore="HardcodedText"
                 android:layout_gravity="center"
+
                 />
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/goadminregbtn"
                 android:text="Administration"
                 android:onClick="GoAdminReg"
@@ -59,49 +67,65 @@
                 android:hint="First Name Input"
                 tools:ignore="HardcodedText"
                 android:layout_column="0"
-                android:id="@+id/adminfnameinput"/>
+                android:id="@+id/adminfnameinput"
+                android:fontFamily="@font/fontmon"
+                />
             <EditText
                 android:paddingTop="60dp"
                 android:hint="Last Name Input"
                 tools:ignore="HardcodedText"
                 android:layout_column="2"
-                android:id="@+id/adminlnameinput"/>
+                android:id="@+id/adminlnameinput"
+                android:fontFamily="@font/fontmon"
+                />
         </TableRow>
         <EditText
             android:paddingTop="60dp"
             android:hint="Admin Key Input"
             tools:ignore="HardcodedText"
-            android:id="@+id/adminkeyinput"/>
+            android:id="@+id/adminkeyinput"
+            android:fontFamily="@font/fontmon"
+            />
 
 
         <EditText
             android:paddingTop="60dp"
             android:hint="Email Input"
             tools:ignore="HardcodedText"
-            android:id="@+id/adminemailinput"/>
+            android:id="@+id/adminemailinput"
+            android:fontFamily="@font/fontmon"
+            />
 
         <EditText
             android:paddingTop="60dp"
             android:hint="Password Input"
             tools:ignore="HardcodedText"
-            android:id="@+id/adminpwordinput"/>
+            android:id="@+id/adminpwordinput"
+            android:fontFamily="@font/fontmon"
+            />
 
 
         <Button
+        android:backgroundTint="@color/Lorange"
+            
             android:paddingTop="10dp"
             android:text="Register"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:id="@+id/registeradminbtn"/>
+            android:id="@+id/registeradminbtn"
+            />
 
 
         <Button
+        android:backgroundTint="@color/Lorange"
+            
             android:id="@+id/LoginInsteadBtn"
             android:text="Login Instead"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
-           />
+
+            />
 
 
     </TableLayout>

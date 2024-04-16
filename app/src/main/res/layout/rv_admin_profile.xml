@@ -21,18 +21,24 @@
 
 
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:id="@+id/fname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="First Name"
                 android:textSize="20sp"/>
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:id="@+id/lname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Last Name"
                 android:textSize="18sp"/>
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

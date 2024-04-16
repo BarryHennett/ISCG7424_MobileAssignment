@@ -5,7 +5,8 @@
     android:id="@+id/adminprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminProfile">
+    tools:context=".AdminProfile"
+    android:background="@color/Lblue">
 
 
     <TableLayout
@@ -18,19 +19,22 @@
             <ImageButton
                 android:id="@+id/imgbtnbrsdls"
                 android:src="@drawable/dailydealslogo"
-                android:backgroundTint="@color/white"
-
+                android:backgroundTint="@color/Lblue"
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"
                 android:paddingBottom="20dp"/>
 
 
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:textSize="30dp"
                 android:paddingBottom="20dp"
                 android:text="First Name: Harry"/>
 
             <TextView
+                android:fontFamily="@font/fontmon"
+
                 android:textSize="30dp"
                 android:paddingBottom="20dp"
 
@@ -38,6 +42,7 @@
             <TextView
                 android:textSize="30dp"
                 android:paddingBottom="20dp"
+                android:fontFamily="@font/fontmon"
 
                 android:text="Email: Harry@gmail.com"/>
 
@@ -46,6 +51,9 @@
             android:layout_marginBottom="20dp">
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
+
                 android:id="@+id/customerdtls"
                 android:onClick="customerdtls"
                 android:text="Customer Dtls"
@@ -54,6 +62,9 @@
 
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
+
                 android:id="@+id/supplierdtls"
                 android:layout_gravity="end"
                 android:onClick="supplierdtls"
@@ -64,7 +75,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/r_admin_view">
+            android:id="@+id/r_admin_view"
+            android:fontFamily="@font/fontmon"
+            >
         </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>
 </RelativeLayout>

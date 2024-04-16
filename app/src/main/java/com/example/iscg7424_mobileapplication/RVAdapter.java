@@ -41,7 +41,6 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RVHolder holder, int position) {
-        holder.tv.setText((name[position]));
         holder.name.setText(name[position]);
         holder.location.setText(location[position]);
         holder.category.setText(category[position]);
@@ -58,12 +57,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
         TextView category;
         TextView pricing;
         ImageView imageView;
-        TextView tv;
+
 
 
         public RVHolder(@NonNull View itemView) {
             super(itemView);
-            tv = itemView.findViewById(R.id.cardview);
             name = itemView.findViewById(R.id.name);
             location = itemView.findViewById(R.id.location);
             category = itemView.findViewById(R.id.category);

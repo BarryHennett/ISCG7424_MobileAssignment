@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage"
+    android:background="@color/Lblue"
     >
 
     <TableLayout
@@ -25,6 +26,8 @@
             android:layout_marginBottom="20dp">
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/buttonLogin"
                 android:onClick="GoCusLogin"
                 android:layout_column="2"
@@ -34,7 +37,6 @@
                 android:layout_centerHorizontal="true"
                 android:text="Login"
                 />
-
         </TableRow>
 
         <TableRow
@@ -42,12 +44,16 @@
             android:layout_marginBottom="20dp">
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/aklcatbtn"
                 android:onClick="GoAklCtg"
                 android:text="Auckland"
                 tools:ignore="HardcodedText" />
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/welcatbtn"
                 android:layout_gravity="center"
                 android:onClick="GoWelCtg"
@@ -55,12 +61,13 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/quecatbtn"
                 android:layout_gravity="end"
                 android:onClick="GoQueCtg"
                 android:text="Queenstown"
                 tools:ignore="HardcodedText" />
-
         </TableRow>
 
 
@@ -87,17 +94,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+        android:backgroundTint="@color/Lorange"
+            
             android:id="@+id/amzdlsbtn"
             android:layout_gravity="center"
             android:onClick="goamzdls"
             android:text="Amazing Deals!"
             tools:ignore="HardcodedText" />
 
-
-
-
             <ImageButton
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -106,7 +112,7 @@
                 android:contentDescription="image"/>
 
             <ImageButton
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -116,7 +122,7 @@
                 android:contentDescription="image"/>
 
             <ImageButton
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"

@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".BrowseDeals">
+    tools:context=".BrowseDeals"
+    android:background="@color/Lblue">
 
 
     <TableLayout
@@ -22,17 +23,20 @@
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
                 android:src="@drawable/dailydealslogo"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
 
                 tools:ignore="HardcodedText"
                 android:contentDescription="image"
                 android:onClick="gohomepge"/>
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/goprofile"
                 android:layout_column="2"
                 android:text="Profile"
                 android:onClick="goprf"
+
                 />
         </TableRow>
 
@@ -46,6 +50,9 @@
             android:background="@drawable/roundedlayout">
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
+
                 android:id="@+id/button1"
                 android:textSize="13dp"
                 android:layout_width="0dp"
@@ -55,6 +62,8 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/button2"
                 android:layout_width="0dp"
                 android:textSize="13dp"
@@ -66,9 +75,11 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
+        android:backgroundTint="@color/Lorange"
+            
                 android:id="@+id/button3"
                 android:layout_width="0dp"
-                android:textSize="13dp"
+                android:textSize="13sp"
 
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -81,13 +92,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Search Activity"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:fontFamily="@font/fontmon"
+            />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="vertical"
             android:id="@+id/r_view"
+            android:fontFamily="@font/fontmon"
+
             >
         </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>

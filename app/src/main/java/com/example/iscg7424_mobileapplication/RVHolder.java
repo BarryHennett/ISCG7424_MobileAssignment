@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class RVHolder extends RecyclerView.ViewHolder {
-    TextView tv;
     TextView name;
     TextView location;
     TextView category;
@@ -24,14 +23,7 @@ public class RVHolder extends RecyclerView.ViewHolder {
         location = itemView.findViewById(R.id.location);
         category = itemView.findViewById(R.id.category);
         pricing = itemView.findViewById(R.id.pricing);
-        tv = itemView.findViewById(R.id.cardview);
-        tv.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(view.getContext(), DealDetails.class);
-                view.getContext().startActivity(intent);
-            }
-        });
+
 
     }
 

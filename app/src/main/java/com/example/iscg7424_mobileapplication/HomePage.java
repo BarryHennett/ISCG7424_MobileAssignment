@@ -19,7 +19,6 @@ import android.widget.Toast;
 
 public class HomePage extends AppCompatActivity {
 
-    private EditText editTextEmail, editTextPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

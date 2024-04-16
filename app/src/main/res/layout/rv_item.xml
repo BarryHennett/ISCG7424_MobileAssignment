@@ -36,28 +36,35 @@
                 android:layout_height="wrap_content"
                 android:text="Name"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:fontFamily="@font/fontmon"
+                />
 
             <TextView
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Location"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/fontmon"
+                />
 
             <TextView
                 android:id="@+id/category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Category"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/fontmon"
+                />
 
             <TextView
                 android:id="@+id/pricing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Pricing"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/fontmon"
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

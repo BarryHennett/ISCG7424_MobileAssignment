@@ -6,7 +6,8 @@
     android:id="@+id/customerregister"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomerRegister">
+    tools:context=".CustomerRegister"
+    android:background="@color/Lblue">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
                 android:src="@drawable/dailydealslogo"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/Lblue"
 
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"/>
@@ -28,6 +29,8 @@
             android:layout_marginBottom="20dp">
 
             <Button
+                android:backgroundTint="@color/Lorange"
+
                 android:id="@+id/gocusregbtn"
                 android:text="Customer"
                 android:onClick="GoCusReg"
@@ -36,6 +39,8 @@
                 />
 
             <Button
+                android:backgroundTint="@color/Lorange"
+
                 android:id="@+id/gosupregbtn"
                 android:text="Supplier"
                 android:onClick="GoSupReg"
@@ -44,6 +49,7 @@
                 />
 
             <Button
+                android:backgroundTint="@color/Lorange"
                 android:id="@+id/goadminregbtn"
                 android:text="Administration"
                 android:onClick="GoAdminReg"
@@ -55,11 +61,14 @@
         <TableRow
             android:paddingTop="30dp">
             <EditText
+                android:fontFamily="@font/fontmon"
                 android:id="@+id/cusfnameinput"
                 android:hint="First Name"
                  />
 
             <EditText
+                android:fontFamily="@font/fontmon"
+
                 android:id="@+id/cuslnameinput"
                 android:hint="Last Name"
                 android:inputType="text"
@@ -69,24 +78,30 @@
 
 
         <EditText
+            android:fontFamily="@font/fontmon"
+
             android:paddingTop="60dp"
             android:id="@+id/cusemailinput"
             android:hint="Email Input"
- />
+            />
 
 
         <EditText
             android:paddingTop="60dp"
             android:id="@+id/cuspasswordinput"
             android:hint="Password Input"
- />
+            android:fontFamily="@font/fontmon"
+            />
 
             <Button
+
                 android:paddingTop="10dp"
                 android:text="Register"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:id="@+id/registercusbtn"/>
+                android:id="@+id/registercusbtn"
+                android:backgroundTint="@color/Lorange"
+                />
 
         <Button
             android:id="@+id/LoginInsteadBtn"
@@ -94,6 +109,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Lorange"
             />
     </TableLayout>
 </RelativeLayout>

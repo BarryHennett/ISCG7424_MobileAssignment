@@ -5,7 +5,9 @@
     android:id="@+id/userprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserProfile">
+    tools:context=".UserProfile"
+    android:background="@color/Lblue"
+    >
 
 
     <TableLayout
@@ -20,7 +22,7 @@
             android:id="@+id/imgbtnbrsdls"
             android:layout_column="0"
             android:src="@drawable/dailydealslogo"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/Lblue"
 
             tools:ignore="HardcodedText"
             android:onClick="gohomepge"
@@ -31,20 +33,35 @@
             <TextView
                 android:textSize="30dp"
                 android:text="First Name: Harry"
-                android:paddingBottom="20dp"/>
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/fontmon"
+                />
 
             <TextView
                 android:textSize="30dp"
                 android:text="Last Name: Bennett"
-                android:paddingBottom="20dp"/>
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/fontmon"
+                />
 
             <TextView
                 android:textSize="30dp"
                 android:text="Email: Harry@gmail.com"
-                android:paddingBottom="20dp"/>
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/fontmon"
+                />
 
+        <TextView
+            android:textSize="30dp"
+            android:text="Booked Activities:"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:fontFamily="@font/fontmon"
+            />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:fontFamily="@font/fontmon"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/r_userprofile_view">

@@ -22,9 +22,9 @@ public class AdminProfile extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_admin_profile);
 
-        String [] fname = {"Harry","Christopher"};
-        String [] lname = {"Bennett","Dronjak"};
-        String [] email = {"harry@gmail.com","christopher@gmail.com"};
+        String [] fname = {"Harry","Christopher","Ollie"};
+        String [] lname = {"Bennett","Dronjak","Boeinghoff"};
+        String [] email = {"harry@gmail.com","christopher@gmail.com","ollie@gmail.com"};
 
 
         recyclerView2 = findViewById(R.id.r_admin_view);
@@ -35,5 +35,11 @@ public class AdminProfile extends AppCompatActivity {
     }
 
     public void customerdtls(View view) {
+    }
+    public void supplierdtls(View view) {
+    }
+    public void gohomepge(View view) {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
     }
 }
