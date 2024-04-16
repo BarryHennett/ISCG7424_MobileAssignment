@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:stretchColumns="1">
-        <TableRow>
 
             <ImageButton
                 android:id="@+id/imgbtnbrsdls"
@@ -23,7 +22,6 @@
 
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"/>
-        </TableRow>
 
         <TableRow
             android:layout_marginTop="20dp"

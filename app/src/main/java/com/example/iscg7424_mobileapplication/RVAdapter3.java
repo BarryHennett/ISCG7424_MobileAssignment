@@ -1,9 +1,5 @@
 package com.example.iscg7424_mobileapplication;
 
-
-import static androidx.core.content.ContextCompat.startActivity;
-
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,14 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
+public class RVAdapter3 extends RecyclerView.Adapter<RVAdapter3.RVHolder3> {
 
     String [] name;
     String [] location;
     String [] category;
     String [] pricing;
     int[] images;
-    public RVAdapter(BrowseDeals browseDeals, String [] name, String [] location, String [] category, String [] pricing, int [] images){
+    public RVAdapter3(UserProfile userProfile, String [] name, String [] location, String [] category, String [] pricing, int [] images){
         this.name = name;
         this.location = location;
         this.category = category;
@@ -31,39 +27,34 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
 
     @NonNull
     @Override
-    public RVHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RVHolder3 onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
         View view = inflater.inflate(R.layout.rv_item, parent, false);
-        return new RVHolder(view);
-
+        return new RVHolder3(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RVHolder holder, int position) {
-        holder.tv.setText((name[position]));
-        holder.name.setText(name[position]);
-        holder.location.setText(location[position]);
-        holder.category.setText(category[position]);
-        holder.pricing.setText(pricing[position]);
-        holder.imageView.setImageResource(images[position]);
+    public void onBindViewHolder(@NonNull RVHolder3 holder3, int position) {
+        holder3.name.setText(name[position]);
+        holder3.location.setText(location[position]);
+        holder3.category.setText(category[position]);
+        holder3.pricing.setText(pricing[position]);
+        holder3.imageView.setImageResource(images[position]);
     }
 
     @Override
     public int getItemCount()
     {return name.length;}
-    public static class RVHolder extends RecyclerView.ViewHolder{
+    public static class RVHolder3 extends RecyclerView.ViewHolder {
         TextView name;
         TextView location;
         TextView category;
         TextView pricing;
         ImageView imageView;
-        TextView tv;
 
-
-        public RVHolder(@NonNull View itemView) {
+        public RVHolder3(@NonNull View itemView) {
             super(itemView);
-            tv = itemView.findViewById(R.id.cardview);
             name = itemView.findViewById(R.id.name);
             location = itemView.findViewById(R.id.location);
             category = itemView.findViewById(R.id.category);

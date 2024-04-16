@@ -13,17 +13,16 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:stretchColumns="1">
-        <TableRow>
+
 
             <ImageButton
                 android:id="@+id/imgbtnbrsdls"
                 android:layout_column="0"
                 android:src="@drawable/dailydealslogo"
                 android:backgroundTint="@color/white"
-
                 tools:ignore="HardcodedText"
                 android:onClick="gohomepge"/>
-        </TableRow>
+
 
         <TableRow
             android:layout_marginTop="20dp"
@@ -78,22 +77,16 @@
                 android:layout_height="60dp"/>
 
             <Button
-                android:layout_column="2"
-                android:text="Forgot Password"
+                android:id="@+id/cusregisterInsteadBtn"
+                android:text="Register Instead"
+                android:onClick="gocrg"
                 android:layout_width="wrap_content"
+                android:layout_column="2"
                 android:layout_height="60dp"
-                />
+                android:layout_marginBottom="120dp"/>
         </TableRow>
 
         </TableLayout>
-    <Button
-        android:id="@+id/cusregisterInsteadBtn"
-        android:text="Register Instead"
-        android:onClick="gocrg"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"/>
+
 
 </RelativeLayout>

@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:scrollbars="vertical"
             android:id="@+id/r_view"
-            android:onClick="godldtls">
+            >
         </androidx.recyclerview.widget.RecyclerView>
     </TableLayout>
 </RelativeLayout>

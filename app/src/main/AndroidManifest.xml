@@ -16,7 +16,9 @@
         <activity
             android:name=".AdminLogin"
             android:exported="false" />
-
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
         <activity
             android:name=".AdminRegister"
             android:exported="false" />
@@ -45,15 +47,14 @@
             android:name=".BrowseDeals"
             android:exported="false" />
         <activity
-            android:name=".DealDetails"
-            android:exported="false" />
-        <activity
             android:name=".HomePage"
+
             android:exported="false" />
 
 
+
         <activity
-            android:name=".AdminProfile"
+            android:name=".DealDetails"
 
             android:exported="true">
             <intent-filter>

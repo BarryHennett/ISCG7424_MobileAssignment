@@ -90,4 +90,9 @@ public class SupplierRegister extends AppCompatActivity {
         Intent intent = new Intent(this, AdminRegister.class);
         startActivity(intent);
     }
+
+    public void gohomepge(View view) {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
+    }
 }

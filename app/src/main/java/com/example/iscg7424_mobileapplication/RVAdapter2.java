@@ -33,10 +33,10 @@ public class RVAdapter2 extends RecyclerView.Adapter<RVAdapter2.RVHolder2> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RVHolder2 holder, int position) {
-        holder.fname.setText(fname[position]);
-        holder.lname.setText(lname[position]);
-        holder.email.setText(email[position]);
+    public void onBindViewHolder(@NonNull RVHolder2 holder2, int position) {
+        holder2.fname.setText(fname[position]);
+        holder2.lname.setText(lname[position]);
+        holder2.email.setText(email[position]);
     }
 
     @Override
