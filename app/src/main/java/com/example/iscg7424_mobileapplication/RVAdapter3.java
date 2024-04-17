@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class RVAdapter3 extends RecyclerView.Adapter<RVAdapter3.RVHolder3> {
+public class RVAdapter3 extends RecyclerView.Adapter<RVHolder3> {
 
     String [] name;
     String [] location;
@@ -46,20 +46,5 @@ public class RVAdapter3 extends RecyclerView.Adapter<RVAdapter3.RVHolder3> {
     @Override
     public int getItemCount()
     {return name.length;}
-    public static class RVHolder3 extends RecyclerView.ViewHolder {
-        TextView name;
-        TextView location;
-        TextView category;
-        TextView pricing;
-        ImageView imageView;
 
-        public RVHolder3(@NonNull View itemView) {
-            super(itemView);
-            name = itemView.findViewById(R.id.name);
-            location = itemView.findViewById(R.id.location);
-            category = itemView.findViewById(R.id.category);
-            pricing = itemView.findViewById(R.id.pricing);
-            imageView = itemView.findViewById(R.id.imgvwbrdls);
-        }
-    }
 }

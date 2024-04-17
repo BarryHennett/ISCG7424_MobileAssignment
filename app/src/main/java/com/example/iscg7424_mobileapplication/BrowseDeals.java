@@ -25,9 +25,6 @@ public class BrowseDeals extends AppCompatActivity {
         RVAdapter adapter = new RVAdapter(this, name, location, category, pricing, images);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
-
-
-
     }
 
 

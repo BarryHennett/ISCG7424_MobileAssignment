@@ -13,10 +13,10 @@
         app:cardCornerRadius="20dp"
         android:layout_margin="10dp"
         android:id="@+id/cardview"
-        android:onClick="godealdetails"
         >
 
         <LinearLayout
+            android:id="@+id/itmvw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

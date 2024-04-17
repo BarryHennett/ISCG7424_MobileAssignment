@@ -50,14 +50,14 @@
             android:name=".BrowseDeals"
             android:exported="false" />
         <activity
-            android:name=".HomePage"
+            android:name=".NewActivity"
 
             android:exported="false" />
 
 
 
         <activity
-            android:name=".NewActivity"
+            android:name=".HomePage"
 
             android:exported="true">
             <intent-filter>

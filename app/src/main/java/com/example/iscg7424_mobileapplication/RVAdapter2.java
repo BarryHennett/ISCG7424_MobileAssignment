@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class RVAdapter2 extends RecyclerView.Adapter<RVAdapter2.RVHolder2> {
+public class RVAdapter2 extends RecyclerView.Adapter<RVHolder2> {
 
     String [] fname;
     String [] lname;
@@ -42,17 +42,5 @@ public class RVAdapter2 extends RecyclerView.Adapter<RVAdapter2.RVHolder2> {
     @Override
     public int getItemCount()
     {return fname.length;}
-    public static class RVHolder2 extends RecyclerView.ViewHolder {
-        TextView fname;
-        TextView lname;
-        TextView email;
 
-        public RVHolder2(@NonNull View itemView) {
-            super(itemView);
-            fname = itemView.findViewById(R.id.fname);
-            lname = itemView.findViewById(R.id.lname);
-            email = itemView.findViewById(R.id.email);
-
-        }
-    }
 }

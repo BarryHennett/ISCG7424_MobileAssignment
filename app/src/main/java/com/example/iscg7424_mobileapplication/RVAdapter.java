@@ -1,27 +1,24 @@
 package com.example.iscg7424_mobileapplication;
 
 
-import static androidx.core.content.ContextCompat.startActivity;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
+public class RVAdapter extends RecyclerView.Adapter<RVHolder> {
 
     String [] name;
     String [] location;
     String [] category;
     String [] pricing;
+
     int[] images;
     public RVAdapter(BrowseDeals browseDeals, String [] name, String [] location, String [] category, String [] pricing, int [] images){
+
         this.name = name;
         this.location = location;
         this.category = category;
@@ -51,22 +48,5 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.RVHolder> {
     @Override
     public int getItemCount()
     {return name.length;}
-    public static class RVHolder extends RecyclerView.ViewHolder{
-        TextView name;
-        TextView location;
-        TextView category;
-        TextView pricing;
-        ImageView imageView;
 
-
-
-        public RVHolder(@NonNull View itemView) {
-            super(itemView);
-            name = itemView.findViewById(R.id.name);
-            location = itemView.findViewById(R.id.location);
-            category = itemView.findViewById(R.id.category);
-            pricing = itemView.findViewById(R.id.pricing);
-            imageView = itemView.findViewById(R.id.imgvwbrdls);
-        }
-    }
 }
