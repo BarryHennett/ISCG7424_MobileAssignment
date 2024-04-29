@@ -73,4 +73,19 @@ public class AdminRegister extends AppCompatActivity {
             }
         });
     }
+
+    public void GoCusReg(View view) {
+        Intent intent = new Intent(this, CustomerRegister.class);
+        startActivity(intent);
+    }
+
+    public void GoSupReg(View view) {
+        Intent intent = new Intent(this, SupplierRegister.class);
+        startActivity(intent);
+    }
+
+    public void GoAdminReg(View view) {
+        Intent intent = new Intent(this, AdminRegister.class);
+        startActivity(intent);
+    }
 }

@@ -28,7 +28,8 @@
             android:name=".SupplierLogin"
             android:exported="false" />
         <activity
-            android:name=".SupplierProfile"
+            android:name=".NewActivity"
+
             android:exported="false" />
         <activity
             android:name=".SupplierRegister"
@@ -43,14 +44,14 @@
             android:name=".CustomerRegister"
             android:exported="false" />
         <activity
-            android:name=".AdminProfile"
+            android:name=".SupplierProfile"
 
             android:exported="false" />
         <activity
             android:name=".BrowseDeals"
             android:exported="false" />
         <activity
-            android:name=".NewActivity"
+            android:name=".AdminProfile"
 
             android:exported="false" />
 
@@ -58,6 +59,7 @@
 
         <activity
             android:name=".HomePage"
+
 
             android:exported="true">
             <intent-filter>
